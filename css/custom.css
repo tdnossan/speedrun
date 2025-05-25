@@ -1,0 +1,67 @@
+.md-typeset h1 {
+border: solid 3px;
+padding: 0.5em;/*文字周りの余白*/
+border-radius: 0.5em;/*角丸*/
+margin-top: 3.5em;
+}
+
+.md-typeset * {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.md-typeset .admonition * {
+    font-size: 0.8rem;
+}
+
+.md-typeset h2 {
+    border-bottom: solid 1px;
+    font-size: 2.5rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    padding: .5rem 0;
+    letter-spacing: 1px;
+}
+
+.md-typeset h3 {
+ border-bottom: solid 5px;
+    font-weight: bold;
+    margin-top: 2.5em;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.md-typeset h3::before {
+    content: "# ";
+}
+
+.md-typeset h4 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: 3px solid #aaa;
+    display: inline-block;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+}
+.md-typeset h4 + * {
+    margin-top: 0;
+}
+/*
+.md-typeset h4::before {
+    content: "[";
+}
+.md-typeset h4::after {
+    content: "]";
+}*/
+
+.heart-pulse {
+    color: red;
+}
+
+body {
+    font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", Helvetica, "Arial", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+strong {
+    color: var(--md-accent-fg-color)
+}
+
