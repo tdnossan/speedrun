@@ -12,7 +12,7 @@
       
       
       
-        <link rel="next" href="tcnb_normal/">
+        <link rel="next" href="tcnb_allxs/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -47,6 +47,8 @@
     
     
       <link rel="stylesheet" href="css/custom.css">
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -279,17 +281,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rtaznb" class="md-nav__link">
+  <a href="#znb" class="md-nav__link">
     <span class="md-ellipsis">
-      RTAを始める前の基礎知識（Z・NB共通）
+      プレイ環境について（Z・NB共通）
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="RTAを始める前の基礎知識（Z・NB共通）">
+    <nav class="md-nav" aria-label="プレイ環境について（Z・NB共通）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#rta_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTAのルール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      言語によるプレイ時間差
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      本体によるロード時間の差
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       センサーバーの設置と感度調整
     </span>
@@ -348,6 +377,21 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTAを始める前の基礎知識（Z・NB共通）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RTAを始める前の基礎知識（Z・NB共通）">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#ess" class="md-nav__link">
     <span class="md-ellipsis">
@@ -367,7 +411,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       頻出患部の基本処置について
     </span>
@@ -377,7 +421,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       裂傷
     </span>
@@ -386,7 +430,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       腫瘍
     </span>
@@ -400,7 +444,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       治療判定遅延
     </span>
@@ -409,7 +453,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       バイタルダメージの種類について
     </span>
@@ -419,7 +463,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       持続ダメージ
     </span>
@@ -428,7 +472,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       即時ダメージ
     </span>
@@ -437,7 +481,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       器具ダメージ
     </span>
@@ -446,7 +490,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       超執刀中のダメージ
     </span>
@@ -455,7 +499,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
+  <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
       即死ダメージの回避について
     </span>
@@ -469,7 +513,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+  <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
       バイタル回復について
     </span>
@@ -479,7 +523,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
+  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       バイタル注射
     </span>
@@ -488,7 +532,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
       ヒールゼリー
     </span>
@@ -502,7 +546,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
+  <a href="#_17" class="md-nav__link">
     <span class="md-ellipsis">
       器具グリッチ
     </span>
@@ -551,7 +595,7 @@
             
   
   <span class="md-ellipsis">
-    Tcnb normal
+    Tcnb allxs
     
   </span>
   
@@ -561,6 +605,78 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tcnb allxs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tcnb_allxs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    カドゥケウス NEW BLOOD All Operation XS Rank RTAガイド
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tcnb normal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Tcnb normal
           </label>
@@ -616,10 +732,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -631,8 +747,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Tcso normal
           </label>
@@ -707,13 +823,91 @@
 
 <h1 id="rta">カドゥケウスシリーズのRTAについて</h1>
 <p>タイムが決まる要素はリモコン操作の習熟が7割、RTAの攻略知識が3割です。</p>
-<p>操作が早く正確なほど有利になる点が多く、ゲームを破壊するようなグリッチ等もほぼ無い為、多少の知識差等はあまり影響が出ません。</p>
+<p>操作が早く正確なほど有利になる点が多く、ゲームを破壊するようなグリッチ等もほぼ無いため、多少の知識差等はあまり影響が出ません。</p>
 <ul>
 <li><a href="tcso_normal/">カドゥケウスZ 2つの超執刀 Any% Normal RTAガイド</a></li>
 <li><a href="tcnb_normal/">カドゥケウス NEW BLOOD Any% Normal RTAガイド</a></li>
 </ul>
-<h2 id="rtaznb">RTAを始める前の基礎知識（Z・NB共通）</h2>
-<h3 id="_1">センサーバーの設置と感度調整</h3>
+<h2 id="znb">プレイ環境について（Z・NB共通）</h2>
+<h3 id="rta_1">RTAのルール</h3>
+<ol>
+<li>「Now loading」が消えてから、エピローグのSkip表示が消えるまでを計測する</li>
+<li>Any%カテゴリでは各ステージのクリアランク(C～S)は問わない</li>
+<li>タイム計測にはLiveSplit等の外部タイマーを利用する</li>
+<li>一部のステージだけ難易度を上げてプレイしてもよい（Z・NB共にタイムが早くなるシーンが存在する）</li>
+<li>ゲームのサウンドはノイズにまみれていなかったり極端に音量が低くないなど視聴に耐えうる品質が必要</li>
+<li>ゲームのサウンド設定ではボイスのみOFFにすることができる</li>
+<li>公式のハードウェア（WiiまたはWiiU）とソフト（コピー等ではない正規品のディスク）でのプレイが必要</li>
+<li>USBやSDからゲームデータをロードするプレイは認められない</li>
+<li>HomeBrew経由でゲームディスクをロードすることは可能だが、公正なロード時間を確保するためにHomeBrew Game Loaderガイドを参照して行うこと（リージョンロック回避がおもな目的）</li>
+</ol>
+<h3 id="_1">言語によるプレイ時間差</h3>
+<p>日本語版を利用したほうが最終的に25～30秒の短縮になるとのこと</p>
+<p><a href="https://leokeidran.github.io/tcso/">TCSO Speedrun Guide | Speedrun Guide to Trauma Center: Second Opinion</a></p>
+<h3 id="_2">本体によるロード時間の差</h3>
+<p><a href="https://iid01.com/wii_load_time/">Wii本体の内部チップによってロード時間が変わるので、判明分をまとめてみた</a></p>
+<p>こちらの記事を参考手持ちの3台でロード時間を計測したところ下記結果となった。</p>
+<table>
+<thead>
+<tr>
+<th>シーン</th>
+<th>Wii（初期型）</th>
+<th>Wii黒</th>
+<th>WiiU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADVパート</td>
+<td>0.00</td>
+<td>-0.11</td>
+<td>-0.22</td>
+</tr>
+<tr>
+<td>ADVからEp一覧へ</td>
+<td>0.00</td>
+<td>-0.11</td>
+<td>-0.22</td>
+</tr>
+</tbody>
+</table>
+<p>※Wii（初期型）を基準としてそれより何秒早いか</p>
+<p>手術中の術野移動に関しては操作状況によって事前ロードが入るのか機種毎にバラバラで、WiiUよりもWii（初期型）が早いこともあった。</p>
+<p>WiiUのロード速度が最も早く、次にWiiの後期型（黒や赤）、そして初期型のWiiが最も遅い。</p>
+<p>特に事情がないのであればWiiUを使うのをオススメする。WiiUはWiiのAVケーブルを流用できるうえにHDMIケーブルでも480iか480pで映像を出力することができるのでアナログ対応のキャプチャを買う必要がなくなる。</p>
+<p>WiiUの欠点は電源を入れてからWiiモードに移行するまでに時間がかかる、といった程度。</p>
+<!--
+
+
+
+初期生産の白WiiとGC2-DMSチップが乗った黒Wiiでざっくり算出したところ
+
+|&nbsp;|&nbsp;|
+|-|-:|
+|黒Wii記録|1時間31分47|
+|白Wii記録|1時間33分41|
+|↑のタイム差  |1分54秒|
+|実操作時間差|52秒|
+|予想ロード時間差|1分2秒|
+
+およそ1分の差が発生している。
+
+ロード時間差が発生するシーンは以下の通り。
+
+|シーン|差|
+|-|-:|
+|メッセージスキップ|立ち絵切り替え量に比例|
+|手術開始までの暗転|約0.2秒|
+|術野切り替え|約0.3秒|
+|メニューからエピソード一覧へ移動|約0.8～0.9秒|
+
+ロード時間を見分ける目安としては手術終了後にメニューからエピソード一覧に戻る際の暗転時間を見るのが最もわかりやすい。
+
+[Youtube - カドゥケウス NEW BLOOD ロード時間比較](https://www.youtube.com/shorts/YL--XSWbEXE)
+
+-->
+
+<h3 id="_3">センサーバーの設置と感度調整</h3>
 <p>センサーバーからは最低でも1m、可能なら1.5mは離れよう。
 せーサーバーの位置は上下どちらでも構わないが、リモコンをひねる際にポインタが画面外に飛び出してしまうと<strong>ひねっていないと判定されてしまう</strong>ので位置や持ち方を調整したほうが良いかもしれない。</p>
 <h3 id="wii">Wiiリモコンの持ち方について</h3>
@@ -736,6 +930,7 @@
 <p><img alt="image" src="images/stick.jpg" /></p>
 <p>スティックの入力は図の通りだが角度が微妙にずれると隣の器具が選択されてしまうのでヌンチャクも可能な限り同じ角度・位置でホールドする。</p>
 <p>Wiiリモコンの持ち方については以上になるが、必ずこの通りにしなければならないわけではないので、自分にあったリモコン操作方法を見つけよう。</p>
+<h2 id="basic">RTAを始める前の基礎知識（Z・NB共通）</h2>
 <h3 id="ess">エピソードセレクトスキップ(ESS)</h3>
 <p>手術クリア後はエピソード再生中に(+)ボタンからEPISODE SELECTを選択してエピソード選択画面に移動してもクリア扱いになる。<strong>この操作をエピソードセレクトスキップ（以下ESS）と呼ぶ</strong>。</p>
 <p><strong>手術クリア後のエピソードが極端に短い場合を除いて</strong>基本的にESSを利用していく。</p>
@@ -746,19 +941,19 @@
 <p>危機的状況だからといって次々と患部を治療していくとバイタルを回復する暇もなくゲームオーバーになってしまう。そこで有効になるのが、<strong>裂傷等をひとつだけ残してひたすらバイタルを回復</strong>すること。</p>
 <p>時間制限があるので常に回復するわけにはいかないが、それでもこれだけでほとんどのステージでは楽になる。</p>
 <p><img alt="" src="images/basic-progress.mp4" /></p>
-<h3 id="_2">頻出患部の基本処置について</h3>
-<h4 id="_3">裂傷</h4>
+<h3 id="_4">頻出患部の基本処置について</h3>
+<h4 id="_5">裂傷</h4>
 <p>裂傷の上をジグザグに縫合糸で往復すれば良いが何往復もする必要は無い。</p>
 <p>縫合の幅が広すぎず、縫合の折り返し回数が適度な場合が最も縫合スコアが高く、スコアが低いと無判定またはBAD、スコアが高ければCOOLとなる。</p>
 <p>とにかく早くクリアするだけなら最低でもBAD判定を取れれば良い。</p>
 <p>角度さえまともなら折り返し1回だけの縫合でもBAD判定を出すことは可能だが、無判定になることもあるので折り返し2～3回で済ませるのが無判定にもならず速度も出せる。</p>
 <p><img alt="" src="images/basic-nerd1.mp4" /></p>
 <p><img alt="" src="images/basic-nerd2.mp4" /></p>
-<h4 id="_4">腫瘍</h4>
+<h4 id="_6">腫瘍</h4>
 <p>出現場所は完全に固定なので基本的に場所を覚えてエコー無しで切除する。</p>
 <p>エコー使用時に縦のガイドラインが見えるが、どの方向でもいいので腫瘍を一直線に切るようにメスを入れることで切り出すことができる。</p>
 <p>腫瘍で最も重要なことが、<strong>治療完了判定まで1秒かかる</strong>こと。</p>
-<h3 id="_5">治療判定遅延</h3>
+<h3 id="_7">治療判定遅延</h3>
 <p>一部の患部はCoolやGood判定を出しても治療が終わったと判定されるまで1秒かかるものがある。</p>
 <ul>
 <li>人工膜へのヒールゼリー定着</li>
@@ -767,14 +962,14 @@
 <p><a href="#progress">ゲームの進行について</a>の通り、画面上の全ての患部を治療してから次のイベント等が発生する仕様になっているが、この判定遅延患部を最後に治療してしまうと1秒待たないと次のイベントが発生しなくなっている。</p>
 <p>ゲーム全体に頻出する腫瘍（の切除痕）が対象なので、忘れずに早めに処理するようにしよう。</p>
 <p><img alt="" src="images/basic-jerry.mp4" /></p>
-<h3 id="_6">バイタルダメージの種類について</h3>
-<h4 id="_7">持続ダメージ</h4>
+<h3 id="_8">バイタルダメージの種類について</h3>
+<h4 id="_9">持続ダメージ</h4>
 <p>DoT(Damage over Time)とも呼ばれるもので、時間経過で少しずつ徐々にバイタルが減少するダメージを指す。</p>
 <p>患部の種類によって減少量は異なる。患部一つ一つのダメージ量はそこまでではないが、数が集まって無視できないダメージ量になる。</p>
 <p><img alt="" src="images/basic-damage-dot.mp4" /></p>
 <p>当然処置に時間がかかるほどその間に受けるバイタルダメージが大きくなるが、逆に言えば<strong>操作が早ければ早いほど受けるダメージが少なくなる</strong>ので、カドゥケウスRTAではいかに操作を最適化して素早く処置することによりバイタルダメージを減らして回復行動による時間を減らすかが重要になる。</p>
 <p>また、<strong>裂傷にヒールゼリーを塗ると極わずかな間だけ持続ダメージが停止する</strong>。画面上の裂傷の数が多い上にバイタルがピンチになるような場合はバイタル注射を打とうとすると手遅れになる場合もあるのでまずはゼリーでバイタルの減少を止めよう。</p>
-<h4 id="_8">即時ダメージ</h4>
+<h4 id="_10">即時ダメージ</h4>
 <p>持続ダメージとは別に特定の処置を行った時などに固定で受けるダメージ。</p>
 <p>例えば腫瘍をメスで切除した時は固定で3ダメージ、内出血の切除時は5ダメージ、閉創時の縫合やテーピングをミスした場合は5ダメージを受ける。</p>
 <p>この固定ダメージの数値から、事前にどれぐらいバイタルを回復しておけば以降の回復が不要になるか、を計算することが必要になる。</p>
@@ -782,19 +977,19 @@
 バイタル5未満で速度重視のテーピングをミスってしまったら当然ステージの最初からやり直しになるが、バイタル5以上なら1度はミスできるので安心してテーピングすることができる。</p>
 <p><img alt="" src="images/basic-damage-instant.mp4" />
 ▲腫瘍の切除時にバイタルが3減少している</p>
-<h4 id="_9">器具ダメージ</h4>
+<h4 id="_11">器具ダメージ</h4>
 <p>メス限定で、メスに持ち替えてAボタンを押して使用している間だけバイタルが徐々に減少する。</p>
 <p>例えば腫瘍の切除にしてもガイドラインをうまくなぞれなければそれだけ余分にダメージを受けてしまう。</p>
 <p><img alt="" src="images/basic-damage-mesu.mp4" /></p>
-<h4 id="_10">超執刀中のダメージ</h4>
+<h4 id="_12">超執刀中のダメージ</h4>
 <p>時間の流れを遅くする超執刀でも即時ダメージは当然受けるし持続ダメージもゆるやかながら受けてしまう。無敵ではないのだ。</p>
-<h4 id="_11">即死ダメージの回避について</h4>
+<h4 id="_13">即死ダメージの回避について</h4>
 <p>一気にバイタルが0になる即時ダメージを受けたとしても即ゲームオーバーにはならず、バイタルゲージが徐々に減少していって0未満になった時点で初めてゲームオーバーとして扱われる。</p>
 <p>例えばカドゥケウスZのラスボスは特殊条件下だとバイタルに30の固定ダメージを与えてくるが、ゲージ減少中にバイタル回復注射を打って最終的なバイタルが0を上回ればゲームオーバーを回避することができる。</p>
 <p>利用する機会はほとんどないが覚えておくと役に立つ、かも。</p>
-<h3 id="_12">バイタル回復について</h3>
+<h3 id="_14">バイタル回復について</h3>
 <p>主なバイタル回復の手段はバイタル注射とヒールゼリーの2種類。</p>
-<h4 id="_13">バイタル注射</h4>
+<h4 id="_15">バイタル注射</h4>
 <p>注射器満タンまで充填した状態ならバイタルを最大12(EASYなら24)回復可能だが、</p>
 <ol>
 <li>ポインタを回復剤へ合わせる</li>
@@ -805,10 +1000,10 @@
 <p>という4アクションが必要になり、最大値の12回復させる場合は数秒要してしまう。</p>
 <p>さらに注射器の耐久度の問題も有り、最大値での回復は5回が限度で、以降は器具の復活を待つ必要がある。</p>
 <p>バイタルが1桁しか無い上にダメージが続けて入ってくるような<strong>本当のピンチには役に立たない</strong>ので、基本的に先を見据えて使用していくことになる。</p>
-<h4 id="_14">ヒールゼリー</h4>
+<h4 id="_16">ヒールゼリー</h4>
 <p>回復量はバイタル注射に遠く及ばないものの、バイタルを1～2回復するだけなら<strong>バイタル注射よりも圧倒的に早く回復できる</strong>のが特徴。</p>
 <p>おまけに裂傷の持続ダメージを短時間無効化する効果のおかげでバイタル調整の重要な役割を担うので、ヒールゼリーを隙間時間にいかに挟めるかがタイム短縮の秘訣となる。</p>
-<h3 id="_15">器具グリッチ</h3>
+<h3 id="_17">器具グリッチ</h3>
 <p>Z・NBの両方で使用可能なグリッチで、全ての器具は耐久力が0になって使用できない状態になっても超執刀未使用時に限って<strong>ZまたはCボタンを押しながらAボタンを押すと1フレームだけ使用することができる</strong>というもの。</p>
 <p>ごく一部のステージで有効利用できる。詳しくは該当ステージにて。</p>
 <!--

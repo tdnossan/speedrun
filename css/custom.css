@@ -31,7 +31,23 @@ margin-top: 3.5em;
     letter-spacing: 1px;
 }
 .md-typeset h3::before {
-    content: "# ";
+    /* content: "# "; */ 
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f21e ";
+    margin-right: 5px;
+}
+
+.md-typeset h4 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: 3px solid #aaa;
+    display: inline-block;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+}
+.md-typeset h4 + * {
+    margin-top: 0;
 }
 
 .md-typeset h4 {
