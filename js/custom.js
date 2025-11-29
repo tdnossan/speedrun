@@ -51,3 +51,13 @@ window.document.addEventListener("DOMContentLoaded", function(event) {
         }
     });
 });
+
+// 外部リンクにtarget='_balnk'を付ける
+window.document.addEventListener("DOMContentLoaded", function(event) {
+    let links = document.querySelectorAll("article a");
+    links.forEach(function(link) {
+        if(!link.href.match(/127\.0|localhost|tdnossan/)) {
+            link.target = "_blank"
+        }
+    });
+});
