@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rta" class="md-skip">
+        <a href="#znb-rta" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -355,6 +355,18 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -365,6 +377,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      はじめに
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      カドゥケウス関係のリンク
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rta" class="md-nav__link">
+    <span class="md-ellipsis">
+      著者のRTA記録動画
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -641,6 +699,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      はじめに
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      カドゥケウス関係のリンク
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rta" class="md-nav__link">
+    <span class="md-ellipsis">
+      著者のRTA記録動画
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -655,49 +748,32 @@
 
 
 
-<h1 id="rta">カドゥケウスシリーズのRTAについて</h1>
-<p>タイムが決まる要素はリモコン操作の習熟が7割、RTAの攻略知識が3割です。</p>
-<p>操作が早く正確なほど有利になる点が多く、ゲームを破壊するようなグリッチ等もほぼ無いため、多少の知識差等はあまり影響が出ません。</p>
-<p>リモコンの持ち方やセンサーバーの調整だけでも遊びやすさがかなり変わるので、まずは自分に合った操作環境を整えるところから初めましょう。</p>
+<h1 id="znb-rta">カドゥケウスZ/NB RTAガイド</h1>
+<h2 id="_1">はじめに</h2>
+<p>このRTAガイドでは「カドゥケウスZ」と「カドゥケウス NEW BLOOD」2作品のRTAの知識部分を提供することを目的としています。</p>
+<p>しかし、タイム短縮に影響があるのは、RTAの知識が3割、<strong>リモコン操作の習熟が7割</strong>です。</p>
+<p>リモコンの習熟については練習するしかありませんが、逆に言えば練習するほどタイムが目に見えて縮むゲームです。</p>
+<p>基本的なWiiリモコンの持ち方から解説しているので、まずは自分に合った操作環境を整えるところから初めましょう。</p>
 <ul>
 <li><a href="preparation/">RTA前の準備（ルール、本体による違い）</a></li>
 <li><a href="wiimote/">Wiiリモコンの操作方法</a></li>
-<li><a href="basic/">基礎知識</a></li>
+<li><a href="basic/">RTAの基礎知識とテクニック</a></li>
 <li><a href="tcso_normal/">カドゥケウスZ 2つの超執刀 Any% Normal RTAガイド</a></li>
 <li><a href="tcnb_normal/">カドゥケウス NEW BLOOD Any% Normal RTAガイド</a></li>
 <li><a href="tcnb_allxs/">カドゥケウス NEW BLOOD All Operation XS Rank RTAガイド</a></li>
 </ul>
-<!--
-
-
-
-初期生産の白WiiとGC2-DMSチップが乗った黒Wiiでざっくり算出したところ
-
-|&nbsp;|&nbsp;|
-|-|-:|
-|黒Wii記録|1時間31分47|
-|白Wii記録|1時間33分41|
-|↑のタイム差  |1分54秒|
-|実操作時間差|52秒|
-|予想ロード時間差|1分2秒|
-
-およそ1分の差が発生している。
-
-ロード時間差が発生するシーンは以下の通り。
-
-|シーン|差|
-|-|-:|
-|メッセージスキップ|立ち絵切り替え量に比例|
-|手術開始までの暗転|約0.2秒|
-|術野切り替え|約0.3秒|
-|メニューからエピソード一覧へ移動|約0.8～0.9秒|
-
-ロード時間を見分ける目安としては手術終了後にメニューからエピソード一覧に戻る際の暗転時間を見るのが最もわかりやすい。
-
-[Youtube - カドゥケウス NEW BLOOD ロード時間比較](https://www.youtube.com/shorts/YL--XSWbEXE)
-
--->
-
+<h2 id="_2">カドゥケウス関係のリンク</h2>
+<ul>
+<li><a href="https://www.speedrun.com/series/trauma_center"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span> Trauma Center Series - Speedrun.com</a></li>
+<li><a href="https://szsk.github.io"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span> カドゥケウスシリーズ攻略 (by szsk)</a></li>
+<li><a href="https://leokeidran.github.io/tcso/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span> TCSO Speedrun Guide | Speedrun Guide to Trauma Center: Second Opinion (by LeoKeidran)</a></li>
+</ul>
+<h2 id="rta">著者のRTA記録動画</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=DPVx8icf84A"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span> カドゥケウスZ 2つの超執刀 Any% Normal Speedrun 1:17:55.27 (JP Black Wii GC2-DMS) / Trauma Center:Second Opinion</a></li>
+<li><a href="https://www.youtube.com/watch?v=aePTWpT-gjU"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span> カドゥケウス NEW BLOOD Any% Normal Speedrun 1:31:06.30 (WiiU) / Trauma Center: New Blood</a></li>
+<li><a href="https://www.youtube.com/watch?v=GxM_6L6RPog"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span> カドゥケウス NEW BLOOD All Operation XS Rank Speedrun 2:26:02.36 (WiiU) / Trauma Center: NEW BLOOD</a></li>
+</ul>
 <!--
 
 ## イベントで披露されたカドゥケウス
