@@ -1,0 +1,1520 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="tdnossan">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+    
+    
+      
+        <title>[Product] Feature pitch - カドゥケウスZ/NB RTAガイド</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Inconsolata"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#product-feature-pitch" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="https://github.com/tdnossan/speedrun/" title="カドゥケウスZ/NB RTAガイド" class="md-header__button md-logo" aria-label="カドゥケウスZ/NB RTAガイド" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            カドゥケウスZ/NB RTAガイド
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              [Product] Feature pitch
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="pink"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="orange"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../preparation/" class="md-tabs__link">
+        
+  
+    
+  
+  RTA前の準備
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../wiimote/" class="md-tabs__link">
+        
+  
+    
+  
+  Wiiリモコンの操作方法
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../basic/" class="md-tabs__link">
+        
+  
+    
+  
+  基礎知識
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  カドゥケウスZ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tcnb_normal/" class="md-tabs__link">
+          
+  
+  カドゥケウス NEW BLOOD
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://github.com/tdnossan/speedrun/" title="カドゥケウスZ/NB RTAガイド" class="md-nav__button md-logo" aria-label="カドゥケウスZ/NB RTAガイド" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    カドゥケウスZ/NB RTAガイド
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preparation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RTA前の準備
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wiimote/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wiiリモコンの操作方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基礎知識
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    カドゥケウスZ
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            カドゥケウスZ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Any% Normal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guilt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ギルス攻略
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    カドゥケウス NEW BLOOD
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            カドゥケウス NEW BLOOD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tcnb_normal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Any% Normal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tcnb_allxs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    All XS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#product-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Product Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#product-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Product Name:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potential:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explore solution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ideation-for-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ideation for Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Release Plan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-todo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other TODO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluate
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="product-feature-pitch">[Product] Feature pitch</h1>
+<p>:::info
+<img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4a1.svg" title=":bulb:" /> This template is a feature pitch template.
+:::</p>
+<h2 id="product-background"><img alt="📝" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4dd.svg" title=":memo:" /> Product Background</h2>
+<p>:::success
+Describe the product you want to pitch. What stories have the potential to become features?
+:::</p>
+<h2 id="product-name"><img alt="✔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2714.svg" title=":heavy_check_mark:" /> Product Name:</h2>
+<h2 id="background"><img alt="✔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2714.svg" title=":heavy_check_mark:" /> Background:</h2>
+<h2 id="potential"><img alt="✔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2714.svg" title=":heavy_check_mark:" /> Potential:</h2>
+<h2 id="explore-solution"><img alt="📚" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4da.svg" title=":books:" /> Explore solution</h2>
+<p>:::success
+Explore the existing solution that provides the execution direction.
+:::</p>
+<h2 id="ideation-for-features"><img alt="✏" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/270f.svg" title=":pencil2:" /> Ideation for Features</h2>
+<p>:::success
+List features for the product.
+:::</p>
+<p>1.
+2.</p>
+<h2 id="release-plan"><img alt="📆" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c6.svg" title=":calendar:" /> Release Plan</h2>
+<p>:::success
+Describe the release plan for the feature pitch, including the schedule and others.
+:::</p>
+<table>
+<thead>
+<tr>
+<th><strong>Approach</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+<th><strong>Time</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-todo"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Other TODO</h2>
+<p>:::success
+You can add other TODO things.
+:::</p>
+<ul>
+<li>[ ] Contact to company A.</li>
+<li>[ ] Something to do. </li>
+</ul>
+<h2 id="evaluate"><img alt="💯" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4af.svg" title=":100:" /> Evaluate</h2>
+<p>:::success
+Evaluate if this feature pitch success. Add the items your want to evaluate.
+:::</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Score</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market Opportunity</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Competition</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>User Feedback</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Other</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>コンテンツにスキップします。</p>
+<p>導入
+このガイドは、TCSO のスピードランで採用されるテクニックと戦略についての洞察とガイダンスを提供することを目的としています。これは、ゲームをプレイしたことがあるが、改善方法についてさらに詳しく知りたい人を対象としています。各章には独自のページがあり、各 GUILT 系統も用意されているので、各エリアを理解しやすくなります。</p>
+<p>目次
+ゲームの章
+第1章
+第2章
+第3章
+第4章
+第5章
+第Z章
+第6章
+GUILTガイド
+キリアキ
+デフテラ
+トリティ
+テタルティ
+ペンプティ
+パラスケヴィ
+サヴァト
+全体的なガイダンス
+TCSO は Wii リモコンとヌンチャクを操作するために正確な運動能力を必要とするため、ゲームが上手くなるには、何度も練習して操作に慣れることにかかっています。Second Opinion は 4:3 のアスペクト比で作られているため、カーソルの感度が最も低くなっています。つまり、他の Trauma Center タイトルから移行した場合、カーソルが少し遅く感じることがあります。練習すれば、これは問題になりません。楽器を学ぶのと同じように、ゆっくりと始め、動きをしっかり把握することが、知識と同じくらい重要です。ゆっくりと始めれば、練習を重ねるにつれてスピードを上げることができます。</p>
+<p>センサーバー
+すべてがカーソルで制御されるため、一貫した結果が得られるようにセンサーバーを設定することが重要です。ゲーム外の Wii 設定メニューでこれらの設定を変更する必要があります。まず、センサーバーが画面の上または下の正しい場所に設定されていることを確認します。これにより、カーソルがオフセットされ、より自然な感じになります。これは厳密には必須ではありませんが、Wii リモコンを不快な角度に向けるのを防ぐのに役立ちます。センサーバーの感度については、できるだけ低く設定することを目指してください。完璧な条件が整っている場合は、これを 1 に設定するのが最適ですが、設定によっては 2 または 3 を使用する必要がある場合があります。可能であれば、低いほど良いです。この設定を確認することを強くお勧めします。縫合糸と星がより信頼性が高くなる場合があります。</p>
+<p>ツールの切り替え
+幸いなことに、SO ではヌンチャクを使ってツールを切り替えるので、DS ゲームのように必要なツールをタップして時間を無駄にする必要はありません。しかし、必要なツールを正確なタイミングで選択できることは、ペース配分に役立ちます。失敗したり、見逃して貴重なバイタルを無駄にしたりする可能性が低くなります。ツール切り替えを改善するには、Kyriaki と 2-1 (Thrombi) を強くお勧めします。ツール切り替えが必要なタイミングを予測して実行することで、待機時間が短縮されます。たとえ 1 秒でも、フルランの過程では累積します。そうは言っても、やりすぎには注意してください。ツールの切り替えが早すぎるのは望ましくありません。これは特に縫合糸に当てはまります。A または B を放す前にツールを切り替えると、縫合糸が破棄されるからです。ヌンチャクに「スナップバック」の問題がある場合 (スティックを握って放すと反対のツールが選択されます)、これを回避する最善の方法は、スティックをその時点で使用している方向にロックすることです。例外は、常にそのツールを使用する場合です (例: Pempti では 90% の時間レーザーが必要なので、スティックを常に押し下げても意味がありません)。つまり、スティックが反対方向にスナップバックして間違ったツールを選択することはできません。</p>
+<p>ヒーリングタッチ
+ヒーリングタッチ（HT）はゲームとエンジンベースのタイマーを遅くするので、サイクルをスキップしたり、余裕を持たせたりするのに役立つ可能性があります。ただし、HTがアクティブなときに多くのことが起こると、ゲームが非常に遅くなるため、ほとんどのオペレーションで使用しないでください。そうは言っても、必要な場合は、余裕を持たせる必要がある場合は、ヒーリングタッチを使用することを恐れないでください。チャプターZのほぼすべてのオペレーションはナオミのHTを活用しており、これは6-4にも当てはまります。したがって、これらのオペレーションではメリットがデメリットを上回るため、HTを避けるというアドバイスは基本的に無視できます。ナオミとしてオペレーションをプレイしていて、バイタルを強化する必要がある場合は、注射器で強化するのではなく、ヒーリングタッチを使用してください。</p>
+<p>メニュー、テキストスキップ、エピソード選択スキップ（ESS）
+手術以外では、間違ったオプションを選択するだけで簡単に時間を無駄にしてしまいます。これは初心者によくあるミスですが、正しいオプション (しかも適切なタイミングで) を選択することで時間を節約できます。手術を開始するときはいつでも、カーソルをポイントせずに A ボタンを連打するだけで YES を押すことができます。しかし、他の機会には、カーソルを使用して各オプションにスナップできるようにしておくことが重要です。D パッドの使用はお勧めしません。グリップを再調整せずにカーソルをはるかに速くポイントできるためです。さらに、マップが表示されたときや、手術を終了して「患者が救出されました」というメッセージとスコアリングを終えたときも、A ボタンを連打する必要があります。テキスト スキップがなければ、Second Opinion はとてつもなく長くなります (Trauma Team を見てください)。Wii リモコンのマイナス ボタン ( - ) を押すだけでテキスト スキップがオンになり、会話がすっと流れるようになりますが、これをいつ行うかを知るのは難しい場合があります。覚えておくべき 3 つの設定時間があります。</p>
+<p>最初に操作をロードするときに、マップとタイトル カードをマッシュした後、ダイアログ グラデーション (またはキャラクター) が表示されたら、スキップを開始します。
+チャートやポスト操作にロードする場合も同様です。ダイアログのグラデーションが表示されたら、スキップを開始します。
+操作が読み込まれると、「操作の開始」プロンプトが終了する前に、テキスト スキップが開始されることを確認してください。
+エピソードセレクトスキップ、または一般的にESSと呼ばれるスキップは、大部分のオペレーションの後に実行されるスキップです。各エピソードには、スコアを取得した後、オペレーション後のダイアログがいくつかあります。アスタリスク( * )でマークされたオペレーションを除いて、プラス( + )を押して一時停止し、エピソードセレクトを選択して、YESを選択する方が速いです。これにより、オペレーション後のすべてのダイアログとストーリーがカットされます。既存のランナースプリットを確認するか、Speedrun.comページで利用可能なスプリットファイルを使用することをお勧めします。ESSは、非オペレーションエピソード(例: 1-4)でも実行する必要があります。非オペレーションエピソードでESSを実行する場合は、タイトル/エピソードカードが表示される前に実行する必要があります。そのため、マップをマッシュしてから、できるだけ早くプラス( + )をマッシュして、タイトルカードの前にメニューを表示する必要があります。3-1、4-5、6-1など、マップがないため、ESSを即座に実行できる非オペレーションエピソードがあることに注意してください。</p>
+<p>自動保存
+ランを開始するたびに、自動保存をオフにする必要があります。メイン メニューの [新しいゲーム] に移動する前に、[構成] に移動して、[自動保存] の設定を切り替えます。これにより、各エピソードの後に​​ゲームが進行状況を保存しなくなります。これにより、エピソードごとに 3 秒以上が追加され、合計で約 2 分になります。ランではすべてを 1 回でプレイするため、これをオンにする必要はありません。この設定は、保存ファイルにロードして終了するとリセットされるため、ランを開始する前に必ず確認してください。</p>
+<p>ジェルと包帯
+セカンドオピニオンのジェルの信頼性が疑わしいため、状況に応じてジェルの塗り方を変える必要があります。まず、ほとんどの切開では、許容範囲が非常に狭く、ミスが発生する可能性が高いため、患者を開く前にジェルを塗る必要があります。小さな切り傷の場合は、軽くたたくだけで十分ですが、切り傷が密集している場合は（例：腕の1-1）、各切り傷にジェルをたっぷり塗ったほうがよいでしょう。腫瘍膜の場合は、より迅速なため軽くたたくのが望ましいです。包帯については、切開の約40％を覆っている限り、問題ありません。そうは言っても、ミスすると5つのバイタルサインが低下し、患者を死に至らしめる可能性があるため、患者の血糖値が非常に低い場合はより注意してください。包帯の前にジェルを塗るのは望ましくありません（1-1の場合を除く）。これははるかに時間がかかるためです。</p>
+<p>姿勢、ストレッチ、休憩
+1時間以上もWiiリモコンを操作し続けるので、快適であること、手が安定していること、リラックスしていることが非常に重要です。ランナーはそれぞれランニング中の好みの姿勢や座り方を持っていますが、共通する重要な概念が1つあります。それは、手首と前腕をできるだけ支えることです。こうすることで、手が自然に安定し、画面上の特定のポイントにカーソルを静止させようとしているときにカーソルが揺れることがなくなります。私の場合は、足置きだけでなく、クッション性も加わるため、太ももと膝の間にブランケットを挟んでいます。他のランナーが、腕を画面に向かって内側のV字型に曲げて座り、前腕を太ももの上に乗せているのを見たことがあります。また、太ももの一番上の腰付近に置いているランナーもいます。自分にとって快適な姿勢を見つけてください。これに続いて、手をリラックスさせるためにストレッチをすることが非常に重要です。ランニングの途中では、手を伸ばしてつり上がってしまわないようにする機会があります。特に、前の会話の 3-4、4-4、6-4 でそうです。Dr Levi のこのビデオを強くお勧めします: <a href="https://youtu.be/EiRC80FJbHU">https://youtu.be/EiRC80FJbHU</a> - 多くの重要なストレッチと、手をほぐす方法も取り上げられています。新しいタイムを出そうと必死になっていると、休憩を取ることを忘れがちです。休憩を取らないと、反復性運動障害 (RSI) を起こす可能性がほぼ確実です。筋肉をリラックスさせ、関節を楽にするために 5 分間だけ時間を取ってください。そうすれば、体が傾く可能性も低くなります。これは特に練習中に重要です。少なくとも 2 分間は休まずに、20 分以上同じ操作を何度も何度も繰り返してプレイしないようにしてください。</p>
+<p>バイタル
+このゲームは患者を治療し、生かし続けることを中心に展開しているので、スピードラン環境でバイタル ブーストを避けるのは意外かもしれません。簡単に言えば、患者の状態に対処するために使える貴重な時間を奪ってしまうからです。もちろん手術ごとに異なりますし、数字を挙げるとすると、長すぎて覚えられないのですべてを調べるのはほぼ無駄です。しかし、バイタル ブーストしないタイミングを学べば、時間を無駄にすることがなくなります。時間が経つにつれて、この感覚がつかめてきます。しかし逆に、たとえばツールが燃え尽きたり、アニメーションやサイクルを待ったりして待っている場合は、待っている間にバイタル ブーストすると時間の有効活用になります。手術を終えるのに使える時間をバイタル ブーストに費やしてしまうほど、やり過ぎないようにしてください。主な例は次のとおりです。</p>
+<p>デフテラが融合するのを待っています（腫瘍や出血がない限り）
+パラスケヴィの出現を待つ
+サヴァトとの戦いでレーザーが再充電されるのを待つ（切り傷がなく、バイタルが 20 以上ある場合）
+ルーティングと地域の違い
+これは非常に小さな心配事ですが、アニメーションのタイミングを調査およびテストした結果、ゲームの最初の 5 つのチャプターの後にチャプター Z を実行すると、全体で約 1.5 秒の節約になります。 前述のように、これは非常に小さなことであり、チャプター Z を順番に実行することに慣れている場合は、最高レベルの時間に到達するまでそれを続けます。新しいルーティング オプションを使用する場合は、通常どおりゲームをプレイし、チャプター 1 の後、Z-1 を無視して 2-1 に戻ります。それ以降、エピソード選択エリアの反対側に移行することはありません。チャプター 5 で Savato 1 を終了したら、カーソルが左側のチャプター番号にあるときに D-PAD の上矢印を押せるように準備する必要があります。これを 4 回押してから、カーソルを右下に置いて少しスクロールし、Z-1 を表示する必要があります。これは、トップレベルのタイム (つまり、SZSK よりも速い / 1:25:00 未満) に到達するまではあまり心配する必要はありませんが、ゲームを日本語で実行すると、スキップするテキストが少なくなり、実行全体で約 25 ～ 30 秒を節約できます。強調しておきますが、これは重要ではありません。PAL/NTSC-U コピーを持っているからといって、試すべきではないというわけではありません。</p>
+<p>参考までに、ローカライズを気にせずに 1:21:00 というタイムに楽に近づくことは可能です。ゲームに十分な時間をかけ、プレイ時間を改善した後は、ゲームの JP または NTSC-J コピーを入手する可能性が高く、必須ではないことはよくあることです。</p>
+<p>tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/chp/chp1.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/chp/chp1.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+第1章
+メインページに戻る</p>
+<p>1-1*
+メアリーが話すときは、常に少しの遅れに注意してください。特に、最初に縫合するように指示したときや、鉗子を使用するように指示したときは遅れが目立ちます。
+カーソルの動きを少なくするために、まず左の切り傷を縫合し、次に右の切り傷を縫合します。</p>
+<p>破片を取り除いた後、小さな切り傷のそれぞれにジェルを軽くたたきます。
+切開部については、メスを選択する前に、切り傷全体がヘルで覆われていることを確認する必要があります。
+腕の破片による 3 つの切り傷は非常に近いため、これらの上にジェルをたっぷり塗ることができます。
+包帯を巻く前にジェルを塗ることを忘れないでください。</p>
+<p>1-2*
+安定剤を注入するときは、必ずフルドローを行ってください。手抜きをするとメアリーにバレてしまいます！
+1-1 と同様に、メアリーが話している間、各ステップに少しの遅延があります。
+腫瘍は常に同じ場所にあります (下図参照)。メアリーから追加のセリフが出ないように、超音波で腫瘍の位置を正確に確認してください。腫瘍の</p>
+<p>切除は、腫瘍のある場所を横切る直線であればどこでもよく、必ずしも垂直である必要はありません。この場合は、小さな垂直の切り込みを入れるのが、腫瘍を露出させる最も早い方法です。
+膜の後は、膜の中央に直接ジェルを軽くたたきます。今後は、すべての膜に対してこれを行います。
+ジェルを塗らずに包帯を巻くことも忘れないでください。</p>
+<p>1-3*
+炎症には、注射器の約 1/4 だけ、つまりプランジャーがバイアルの端に接する部分だけが必要です (下図参照)。</p>
+<p>腫瘍は常に同じ場所にあるため (下図参照)、最初に超音波検査する必要はありません。
+これらの腫瘍を露出させるときは、それぞれを個別に切断するか、V 字型にカットして 1 回のスイープ動作で取り除くことができます。</p>
+<p>各腫瘍から液を排出した後、排出したのと逆の順序でカットします (つまり、1&gt;2&gt;3 を排出してから 3&gt;2&gt;1 をカットします)。これをすばやく実行できない場合は、排出したのと同じ順序でカットします。
+繰り返しますが、ゲルの場合は、各膜の中央を軽くたたくのが最適です。</p>
+<p>1-5
+これは、ゲルなしで患者を開くことを検討したい最初の操作の 1 つです。ただし、これはかなり難しいと考えられており、約 0.4 秒しか節約できません。実際に試してみてください。ただし、この戦略を実行する義務があるとは思わないでください。
+ポリープをレーザーで処理するときは、各クラスターの間にレーザーを照射するようにします (下図を参照)。4
+番目のポリープは常に血だまりを引き起こします。Angie がこれを指摘するので、会話と必要なツールの切り替えに備えてください。</p>
+<p>すべての穴にレーザーを照射してゲルを塗布した後、事前にビューを次のクラスターが発生する場所に移動します。これは常に上部から下部の領域に交互に発生し、合計 5 つの領域があり、喉の上部で終了します。</p>
+<p>1-6
+この手術では、バイタルサインに注意する必要があります。以下は私の経験に基づいた提案ですが、一貫性の点で何がうまくいくかを確認することを強くお勧めします。
+まず腫瘍に対処します。腫瘍は常に同じ場所にあるため、最初に超音波を使用して発見すべきではありません。2つの対角線上に切り込みを入れると、2つのペアで腫瘍が発見されます。1-3</p>
+<p>と同様に、これらを排出してから、逆の順序で切り取ります（1&gt;2&gt;3&gt;4の後に4&gt;3&gt;2&gt;1）。これには正確さと素早さが求められ、確信が持てない場合は、一度に2つに取り組むことを目指してください。
+バイタルサインの減少が速すぎる場合は、メスの精度を高める必要があることを示しています。
+これらの腫瘍に早く対処すればするほど、炎症段階でより安全になり、バイタルブーストは発生しません。
+膜にジェルを軽く叩きつけたら、炎症に対処し始めます。炎症を完全に治療していなくても、注射器を一杯に吸い込んですべてを注入してから、もう一度やり直す必要があります。一部の炎症のヒットボックスは重なり合っており、これを使用して一度に複数を治療できます。</p>
+<p>丸で囲まれたこれらの炎症には、明らかに重なり合っているヒットボックスと、推奨されるグループ化があります。ただし、これは他の炎症にも適用でき、重なり合っている場合だけではありません。
+膜が消えるのに時間がかかるため、この方法で操作を完了します。この方法により、膜が消えるのを待って時間を無駄にすることはありません。
+アンジーが超音波検査を要求したら、進むには10回使用する必要があります。理想的には、アンジーが指示する前にこれを選択します。</p>
+<p>1-8
+手術は除細動で始まるので、除細動が当たった時に前に進めるよう、事前に Wii リモコンを引き戻します。B を押すと、Wii リモコンを元の位置まで引き戻すことができます。
+患者の体内に入ったら、ガラスを一気に引き抜くようにします。バイタル サインの低下が遅いため、すぐにジェルを使用する必要があります。以下は推奨される手順ですが、自分に合った方法を使用してください。</p>
+<p>破片を引き抜いた後、ジェルを全体に塗りつけるよりも速いため、各切り傷にジェルを軽くたたきます。
+これが完了すると、次の除細動が当たるまでの短い時間があるため、Wii リモコンを引き戻します。バイタル サインが滴り落ちてきても心配しないでください。除細動のために 10 まで低下し、その後回復します。除
+細動後にガラスの破片がさらに 1 つあり、その後に Auto-HT が続き、縫合のために切断されます。これは通常よりも少し大きいため、縫合を完了するために追加のラインが必要になる場合があります。</p>
+<p>メインページ  第2章→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/chp/chp2.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/chp/chp2.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+第2章
+メインページに戻る</p>
+<p>2-1
+この操作は、血栓をできるだけ早く排出するために必要なペース配分のため、ツールの切り替えを改善するのに最適です。
+操作が始まったら、患者を開いたら、最初のズームを忘れないでください。ただし、マッシュが速すぎると誤ってズームアウトすることがあるため、A を 1 回だけ押すように注意してください。
+左上隅の血栓の処理から始め、反時計回りに臓器を下っていきます。</p>
+<p>特に速い場合は、2 番目の血栓の発生が少し遅れるため、最初はスキップする必要がある場合があります。つまり、代わりに 3 番目の血栓を狙う必要があります。
+適切なペースで実行すれば、最後の 2 つの血栓を一緒に超音波検査、切断、排出することができます。</p>
+<p>最初の 5 つの血栓を処理した後、各血栓が外側の静脈で重なるのを待ち、血栓が移動するときに超音波検査して、この場所で血栓をつまめるようにします (下図参照)。Auto-HT がアクティブになったら、グループを切断、排出し、ゲルをタップします。</p>
+<p>他に注意すべき血栓が 2 つあります。一番左上と右下の最後から 2 番目の枝です。
+これらについては、最初の波と同じように対処してください。</p>
+<p>2-3*
+Since this operation is nothing but drawing stars, the one important thing to note is that Derek will cut you off every time you complete a star. Hold ( C ) or ( Z ) so that any time the star icon appears you know you can draw a star.
+The rest of the below covers how to improve your stars, not just for this operation but for any HT you need to activate in the rest of the run, making the critical for Savato.
+First, the game calculates stars in the same way as it calculates the sutures, meaning it looks for an angle change that is significant enough to create a line.
+The game can sometimes accept 6 line stars, however this is often because of an extra line that is insignificant enough, often at the tail of the star.
+You can still pop HT if you have drawn all 5 lines, but the fifth does not appear. Note that the line was drawn and upon letting go, the star activates:</p>
+<p>Regardless of where you start your star (top, bottom left, on the right, on the left) you should aim to keep it clean, even if it is a bit slanted or not completely perfect. The game doesn’t expect you to be perfect, and in fact having some overlap of the start and end points can mean your star counts.
+From experience, wide stars work better than narrow ones. Not entirely sure why, but if the star is wider you’re more likely for it to work.
+Play around with the starting position, for example, I prefer starting my stars at the top, as it is in the active area of the operation where you will be working, and you end in the same position. This way I also create more consistent stars.</p>
+<p>2-4
+Just like in 1-5, you should premptively zoom the camera into each area before the aneurysms spawn in. They will always be in same location every time you complete the operation.
+For the first aneurysm, you only need around half of an injection to sedate it. Don’t forget about draining the blood after you extract it onto the tray.
+After the first aneurysm, move the camera to the left and boost the vitals up to max. Drawing the serum here will be a waste as Angie will cut you off. The next aneurysm only needs about a quarter to a half of a syringe.
+Premptively move the camera over to the right, and take a full draw of the serum. Here you will need to inject one and then the other. If you are fast enough you should be able to sedate both, and then excise them before it wears off. To do this, ensure you cut them in the same order you injected them.
+You won’t be able to draw the sedative before the next wave, so move the camera quickly over to the left. You’ll need a full draw, and a little more, so inject into both and top off the other one with some extra to sedate it. Like the previous wave, if you are quick enough you can cut both out before the sedative wears off.
+Move the camera to the right once more before the final wave, and ensure that the vitals are no lower than 50. Do not activate the healing touch. The intention here is to allow for two of them to burst. Treat the two centre aneurysms, as the other two burst the quickest.</p>
+<p>If you are especially fast, you can extract the aneurysms before the others burst, otherwise just wait a moment as they burst as not to get a miss and potentially kill the patient. From there, collectively drain and deal with each aneurysm as usual.</p>
+<p>2-6*
+This operation is incredibly short, but there are still small optimisations you can employ.
+First of all, drain the blood of one of the cuts. Angie will briefly cut you off once you do. Then close the cut and suture it.
+Next drain the other cut, close it and suture. Angie will again make you wait a moment before you can suture the smaller cuts so keep this in mind.</p>
+<p>It doesn’t matter which cut you start with first, but ensure you finish one cut before moving onto the other as collectively treating them is slower due to the cursor distance and tool switching efficiency.</p>
+<p>2-9
+Like in 2-6, drain each cut, then close them and suture, as this is faster than collectively dealing with the large cuts.</p>
+<p>Please follow the Kyriaki Advice found under GUILT - Kyriaki for this operation. The below is operation specific advice.</p>
+<p>新しくできた切り傷を縫合したら、すぐに手術エリアの中心に向かって超音波を当ててください。ここには最初の未成熟体がいることが多いからです。
+これは必ずしも当てはまるとは限らず、一般的な Kyriaki のアドバイスに従う必要がありますが、多くの場合、未成熟体はこのエリアにいます。</p>
+<p>最初の未成熟体を殺して縫合したら、2 回のフル注射でバイタル ブーストを行うのに十分な時間があります。これは近いので、最初の切り傷が現れた場合は 1.5 を狙う方が良いでしょう。切り傷
+が出現しますが、Greg に切断される前に縫合しようとするのは困難です。バイタル ブーストの後にこの縫合を押し込むように狙います。
+次の切り傷は常にツール ホイールのすぐ隣に出現します。ここには 2 匹の未成熟体がいることを忘れないでください。
+最終ウェーブに到達したら、バイタル 40 以上を目指す必要があります。Kyriaki が
+死んでから少し待たなければならないので、ここで常にバイタル ブーストを行って安全なレベルに保つことができます。
+グレッグとアンジーは、患者の最後の縫合に行くときにあなたを切断します。</p>
+<p>2-11
+心臓のラインにジェルを塗る必要はありませんが、塗った方がはるかに簡単になります。
+除細動器はメスを選択した時点で作動を開始します。
+除細動の準備中に Wiimote を後ろに引いて、除細動器のためにすぐに前に押し出せるようにします。</p>
+<p>HT の場合: 移行が終わったらすぐに HT を出して心臓を開く必要があります。こうすると、血液粒子に遅れが生じません。その後、血液を排出し、切断し、弁を設置し、縫合することができます。血液で覆われるため、これらがどこに行くのかを推測する必要があります。
+それでも除細動が続く場合は、心臓を開く前にヒーリング タッチをアクティブにする必要があるかもしれません。</p>
+<p>HT なし: ここでは本当に速く進むことも可能ですが、非常にタイトで、高度な戦略と見なされます。通常と同じですが、1 つまたは (おそらく) 2 つのミスしか許容されません。</p>
+<p>弁の縫合が奇妙であることを考えると、弁を横切って垂直に縫合する必要があります (上下に縫合)。心臓自体の場合は、開口部全体を縫合します。</p>
+<p>←第1章    メインページ  第3章→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/chp/chp3.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/chp/chp3.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+第3章
+メインページに戻る</p>
+<p>3-2*
+大きな裂傷の場合は、次の傷に対処する前に、1 つの切り傷から血を抜き、閉じて縫合する必要があります。</p>
+<p>この操作については、 GUILT - Kyriakiにある Kyriaki アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>波の間にはかなり長い待ち時間があるので、必要に応じてバイタル ブーストを行うことができます。Kyriaki
+の処置を終えて患者の状態が閉じたら、シドニーがアンジーと Chirality について話すのをやめるまで気まずく待たなければならず、そうしないと手術を完了できません。</p>
+<p>3-4
+手術前にはかなりの時間があるので、その時間を使ってストレッチをしましょう！</p>
+<p>この操作については、 GUILT - Defteraにある Deftera アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>腫瘍の位置は常に同じで、小さなクラスターになっています。これらにレーザーを当てる順番は決まっていませんが、これが私が取る順番です。</p>
+<p>これらの腫瘍をすべてレーザーで当てた後、アンジーが話す前に安定剤を完全に注入するのに十分な時間があります。
+最初のデフテラのペアが融合するのを待つ間に、バイタルを最大にするのに十分な量があるでしょう
+。肺に移ると、バイタルはブーストされません。不足している場合に備えて、これを覚えておいてください。
+デフテラが第 2 ステージで出現するのを待つ間に、バイタルを再度ブーストできます。</p>
+<p>3-6
+The screws have set rotations of about 180 degrees, and you should start from the top left. While the operation loads in, twist your wrist and wiimote to the left, so you can unscrew the first screw. From here, alternate each direction for each screw going clockwise around the bomb:</p>
+<p>Once opened, the fastest method to move the pegs is to place the top right peg in the first position on the left, followed by the pin below it being placed in the third position on the right:</p>
+<p>The red panels here will flash three times, and on the fourth they will move to an adjacent panel.
+You have one miss available, so if you hit a red panel or miss and hit between the panels, slow down and breathe. It’s better to go slightly slower than risk another miss in a full-run.
+If you hit a red panel, it will delay when it moves by a little bit. Just keep this in mind if you recently hit a red panel.
+The safer stat here is to laser all the white panels free that are two tiles away from any existing red tiles. This way you aren’t likely to hit a red panel as it moves.</p>
+<p>As the panels rotate around the core, aim to laser in the same direction, for example if the core is roating upwards, aim to lasers from bottom to top; if the rotation is from left to right, do the same. This way you maximise how many panels you can hit.
+As you approach the last set of panels, keep in mind that a red panel may suddenly appear, do not rush too quickly if you know the panels are due to move.
+You should aim to avoid leaving solo panels, as there is no way to read whether a red panel is going to move onto it, or to allow for a red panel to move away. This however becomes inevitable as you laser off most of the panels.
+For the final phase, pop HT immediately, and laser between the panels to hit the core until it breaks.
+For a slight improvement, aim to buffer the star by holding your cursor still until you see a gap forming in the panels, this way you don’t have to wait as long.
+The core itself is a bit larger than you think, meaning you can laser just under it and damage will be dealt.</p>
+<p>It is safer to wait, than to try to rush and laser through a very risky gap!</p>
+<p>3-8* [Hard]
+この作戦について最初に注意すべきことは、ハード でプレイする必要があるということです。
+これは、サイクル間の待ち時間が短縮されるためです。ただし、この待ち時間を満たすのが難しい場合は、ノーマルで実行してください。ただし、約 20 秒のロスになります。
+すべての浮腫が 1 ウェーブ内で排出された場合、対処する必要があるウェーブは合計 4 つだけです。1 ウェーブで対処できる排出ポイントは 3 つだけです。これらの排出ポイントには、決まった場所があります。</p>
+<p>パターンを特定しようとするときは、エリアを超音波検査し、パターンを特定したら各ポイントを 1 つずつ切断します。3 つすべてを一度に切断すると、バイタル スコアが大幅に低下するため、3 つすべてを一度に切断しないでください。
+超 音波検査を行う理想的な場所は、少なくとも 1 つの排出場所に到達することを期待して、右下エリアまたは中央左エリアのどちらか
+です。最後から 2 番目のウェーブでは、乱気流が到達する直前に早期の超音波検査を実行できます。乱気流が到達する前に、わずかな遅延を伴って 6 回の震動があります。 6 回目の震えの直後に超音波検査を行うと、乱気流が始まり、排出ポイントが明らかになる場合があります。そうでない場合は、このパターンではないことがわかります。これにより、ほんのわずかな時間が節約されます。この例については、こちらを参照してください。</p>
+<p>3-10
+3-8 以降は必ずノーマル (ノーマル/イージー難易度で実行している場合) に戻してください。</p>
+<p>この操作については、 「GUILT - Triti」の下にある Triti アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>ここでヒーリング タッチを使わずに、すべてのトゲを抜いてからトリティの三角形をすべて抜くこともできます。そのためには、一貫性と自信が必要です。
+アンジーとヨーロッパのカドゥケウスの頭は、最初に鉗子を選んだときに切断し、最初のトゲを落としたときにもう一度切断します。HT
+を使用したくない場合は、最初に以下のトゲを取り除くことを選択する必要があります。</p>
+<p>そこから、右端の 3 つの三角形を取り除くことができます。
+次に、中央の 2 つの三角形を囲むトゲを取り除き、その後で取り除きます。</p>
+<p>最後に、最後のトゲのセットと最後の 3 つの三角形を取り除くことができます。</p>
+<p>←第2章    メインページ  第4章→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/chp/chp4.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/chp/chp4.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+第4章
+メインページに戻る</p>
+<p>4-2*
+この手術で注意すべき主な点は、どの手術の後にもESSを行わないことです。最初の2回でESSを行うと、進行状況が失われます。各患者は1分程度かかります。
+この手術の場所は固定されており、次の順序で完了する必要があります。</p>
+<p>最初の2回の手術はほぼ同じですが、3回目の手術のみがわずかに異なります。
+各注射に必要なのはバイアルの4分の1だけで、非常に少量です。
+各サンプルをできるだけ早く採取するための理想的な方法は、患者を開いた後に最初に注射し、次に患者が潜るのを待つことです。できるだけ早く超音波で切り取って血清を採取して注入し、再び潜るのを待っている間に切り口をゲル化します。
+大胆にツールを素早く切り替えたい場合は、サンプルをトレイに置き、メスに切り替えて切断し、遅延が始まる前に排出することで、少し時間を節約できます。これはタイミングが非常に厳しいため、現実的には、これが始まる前にサンプルの一部を排出することを目指す必要があります。
+最後に取り出したサンプルでは、​​ガスが大量に発生します。これを待つだけで済みます。さらに最適化するには、トレイの近くで速度を落とすためにゲル化を試みることもできますが、これによりラグが発生する可能性があります。</p>
+<p>4-4
+手術前の話し合いの間に、ストレッチをする時間を取ることができます。</p>
+<p>この操作については、 GUILT - Tetartiの下にある Tetarti アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>憩室は常に同じ場所にあり、毎回同じ色です。
+切り取って摘出する前に、これら 3 つすべてを注入する必要があります。こうすることで、注入する必要のある血清の総量を減らすことができます。黄色から始めます。黄色は最初に大きくなり、次に緑、紫になります。</p>
+<p>腫瘍と同様に、各膜にゲルを軽くたたく必要があります。
+ゲル化したら、待っている間に安定剤を 1 滴注入できます。いずれにしても、アンジーが切断します。</p>
+<p>4-6*
+Victor の各ステップは、決められた順序 (メス、レーザー、ジェル、注射器) で実行する必要があります。
+注射の段階では、各タイプをフルに吸引する必要があります。第 1 フェーズでは、注射の順序は右から左になります。
+最適に実行すれば、コアが動く前に各フェーズで 3 回の注射を行うことができます。3 回目の注射を狙う場合は、コアが動くときにミスしないようにタイミングを計ってください。
+第 2 フェーズでは、バイタルが低すぎる場合は 75 までブーストする必要があります。
+順序は、青、黄色、紫、白です。
+コアが動く直前に注射することも可能ですが、Victor が怒鳴り、注射をやり直すリスクがあります。2
+回目の白い注射の後、メスを選択し、コアが常にここにある下の領域を切り始めます。</p>
+<p>切り取ったコアをトレイに落とす準備をしてください。</p>
+<p>4-7*
+このパズルには、下記のように決まった解答があります。
+一貫性を保つために、毎回同じ方法でパズルを解くことを強くお勧めします。そうすれば、最終的には参照なしで解くことができるようになります。</p>
+<p>4-8*
+コアが露出するまでに、ナノマシンを 3 回注入する必要があります。各注入は、フル ドーズでなければなりません。4-6
+の研究段階と同様に、十分に素早ければ、これを 3 回注入できます。
+小さな腫瘍をレーザーで治療する必要はありませんが、そうすることで、バイタル ドロップが過度に低下するのを防ぐことができます。2
+回目の注入段階では、最初の注入後にコアが移動する可能性があるため注意してください。
+最後の注入後、コアは常にここにあるため、下の領域を切断してコアを切り取ります。</p>
+<p>4-9
+パズルの解答は常に同じです。それぞれについては以下を参照してください。</p>
+<p>一貫性を保つために、同じ順序でパズルを完成させることを目指してください。そうすれば、参照を使用せずにパズルを完成させることもできます。</p>
+<p>4-10
+研究段階とは異なり、コアを露出させるには、ナノマシンを 2 回注入するだけで済みます。</p>
+<p>この操作については、 GUILT - Pemptiにある Pempti アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>最適にプレイしたとしても、最初のショーケース ウェーブですべてのミニ ブルー コアをレーザーで処理するのは非常に</p>
+<p>難しいため、左から順に 4 つのコアをレーザーで処理し、最も遠いコアを右に残すようにしてください。これは、Victor と Angie が話しているためです。 この操作の最後には、Victor が話しているので注意してください。つまり、縫合を約 0.5 秒遅らせる必要があります。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/chp/chp5.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/chp/chp5.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+第5章
+メインページに戻る</p>
+<p>5-2*
+この操作については、 GUILT - Kyriakiにある Kyriaki アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>このエピソードでは 5 人の Kyriaki 患者が連続して登場するため、ツールの切り替え、ペース、バイタル マネジメント、および全体的なスピードが真剣に試されます。
+ペースが良ければ、患者 2 と 5 のバイタル サインを高めるだけで済みます。
+患者ごとに難易度が徐々に上がります (おおよそ)。患者 1 は、最初は未熟な患者が 1 人いて、次のウェーブでさらに 2 人、最終ウェーブで成熟した患者が続きます。患者 2 は、最初のウェーブで未熟な患者が 2 人、次のウェーブで未熟な患者が 3 人、最後に成熟した患者が続きます。患者 3 は、最初は未熟な患者が 2 人いて、次のウェーブで 2 人、成熟した患者にも未熟な患者が 1 人ずつ付き添います。患者 4 もまったく同じです。患者 5 は、最初は未熟な患者が 3 人いて、さらに 2 人、成熟した患者にはさらに未熟な患者が 1 人付き添います。
+患者間のバイタル サインを高めないでください。最大値 (99) にリセットされます。
+患者を殺した場合、操作全体をやり直す必要があるため、急いで患者を殺すよりも、少しゆっくり安全に行う方がよいでしょう。</p>
+<p>5-3*
+この操作については、 「GUILT - Triti」の下にある Triti アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>トリティのパターンは常に同じで、このオペレーションではヒーリング タッチを使用することをお勧めします。2
+つの明確な領域に分かれていますが、トゲと三角形をすべて一度に取り除き、トゲがなくなるまで三角形に触れないようにしてください。</p>
+<p>5-4
+この操作については、 GUILT - Tetartiの下にある Tetarti アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>憩室は毎回同じ場所にあります。
+最初に黄色、次に緑、そして紫を処理します。これは、憩室が拡大する順序と同じです。4-4</p>
+<p>と同様に、切除する前に 3 つすべてを注入する必要があります。
+膜にゲルを軽くたたく必要があります。
+テタルティが現れるのを待つ間、バイタルを高めるのに十分な時間があります。
+アンジーはそれが変異していると述べていますが、唯一の違いは、全体的により多くの波を完了する必要があることです。</p>
+<p>5-6
+この操作については、 GUILT - Paraskeviの下にある Paraskevi アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>2 つの小さな切り傷に対処した後は、バイタルを最大までブーストするのに十分な時間があります。
+パラスケヴィは、この中間領域の近くに出現し、尾は腸の曲がりの近くにあります。</p>
+<p>ビクターとアンジーは、パラスケヴィを初めて気絶させた後、一時的にあなたを遮断します。彼らが話している間にパラスケヴィを半分に切ろうとしないように、これに備えてください。</p>
+<p>5-8
+未成熟のサバトが出現するそれぞれの切り口は、事前に決められています。全部で 8 箇所あります。5
+匹の未成熟体から、より大きな「青いボイ」が出現し、これが急所を半分に切断します。
+それぞれの切り口では、未成熟体が中央から溢れ出るため、狙い撃ちが簡単です。
+最初の切り口をすべて縫合した後の最初の波では、ここにレーザーを照射する準備をします。</p>
+<p>ここから、ここに次の切り口をレーザーで照射する準備をします。</p>
+<p>次に、ここに 3 番目の切り口をレーザーで照射する準備をします。</p>
+<p>この切り口の後、約 3 秒待ってから、次の切り口が表示される直前にヒーリング タッチをポップします。</p>
+<p>次の 2 つは、互いにすぐ隣り合って配置されています。最後の</p>
+<p>2 つの切り口は非常に素早く行われます。最適化するには、最後の切り口で未成熟体のほとんどをレーザーで照射する必要がありますが、すべてではありません。切り口を縫合してから、レーザー照射を終了します。これにより、テキストの一部がスキップされます。ただし、時間の節約にはなります。</p>
+<p>5-9*
+この操作については、 GUILT - Savatoにある Savato アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>Savato との最初の遭遇は、より穏やかで攻撃性の低いバリエーションです。
+このオペレーションでは、より高速なウェブ スキップを取得し、最終ウェブ フェーズの終了時に余分なストランドをスキップすることができます。これを行うには、左上のストランドの交差でメス グリッチを実行する必要があります。これを 10 回実行してから、他の重複ポイントの 1 つをカットします。グリッチをさらに 10 回繰り返してから、右下の他のストランドの重複をカットします。最後の 2 つのストランドは低 HP で残っているはずです。つまり、メス HT グリッチを続行すると、ストランドが壊れるということです。
+このスキップは非常にタイトで、このオペレーションでのみ実行でき、 Savato 2 では実行できません</p>
+<p>。 簡単に時間を節約するには、Savato の最後の注射の後、星を描く前に、血清を完全に注射してから星を描きます。これを完了するまでに、Savato は追加のカットを行わないはずです。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/chp/chpZ.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/chp/chpZ.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+第Z章
+メインページに戻る</p>
+<p>Z-1
+カーソルの移動を減らしてツールの切り替えを最適化するには、左側で血液を排出し、次に上部で血液を排出してから、右側の切断部を排出し、すぐにゲル化する</p>
+<p>必要があります。これにより、カーソルを動かさずに済みます。骨片を拾う順序は、骨片を置く順序と同じです。このため、一貫性を保つために、常に同じ順序で骨片を拾う必要があります。最終的には、骨片がどこに置かれるかを知るために骨片を見る必要がなくなるポイントに到達する必要があります。例:</p>
+<p>肘を一列に並べるのは難しい場合があります。以下は、ガイドとなる休止点です。</p>
+<p>これらの骨片の回転は少しぎこちなく、A または B で手を離すと手も揺れる可能性があります。最も快適な方法は、事前に手を反対方向に回転させて骨片を拾い、次に手を通常の回転に戻して骨片を落とすことです。
+最後の骨片は常にここにあり、最初に超音波を使用せずに簡単に切断できます。</p>
+<p>この部品は、本来あるべき隙間の中央に落とせば、手首を回転させずに落とすこともできます。</p>
+<p>Z-2
+ノーマルではタイマーがかなり長いので、腫瘍の再生を心配する必要はないことに注意してください。
+バイタルサインの低下が早すぎるのではないかと心配な場合は、腫瘍ごとに静脈を 2 本切断してから、最後の静脈をまとめて切断して抽出してください。
+腫瘍は常に同じ場所にあり、その回転も同じです。
+最初に腫瘍を処理し、次にポリープ/小さな腫瘍を処理することを目指します。
+静脈のヒットボックスは腫瘍から約 3 分の 1 離れたところから始まるため、切り込みすぎないように注意してください。</p>
+<p>第 2 波の 2 つの腫瘍の後でバイタルサインが低下しすぎていない限り、問題ありません。
+ナオミがヒーリングタッチをアクティブにする前に、腫瘍の 1 つを排出できますが、切断されます。</p>
+<p>小さな腫瘍をレーザーで照射しているときは、血液によってゲル化が妨げられることに注意してください。
+余分な出血を防ぐために、これらをクラスター（つまり、腫瘍ごと）でレーザー照射し、ジェルを塗る必要があります。HT
+を有効にすると、腫瘍ごとに静脈を 1 本ずつ切断してから摘出でき、十分なバッファーが得られます。
+作業が遅いとバイタル サインが落ちるのではないかと心配な場合、または腫瘍を落としてしまうのではないかと心配な場合は、腫瘍ごとに静脈を 2 本切断してから、最後の腫瘍をすべて一度に切除してから摘出してください。</p>
+<p>Z-3*
+At the start of the operation, you need to first reveal the three cuts at the top right of the chest for you to be given access to the sutures.
+After the first cut, Naomi will talk a little and you’ll be given access to the rest of the tools.
+All the effected areas are stationary and the same every time, so it is possible to deal with each area without moving the penlight. This is ideal to avoid wasting time as you move the light.</p>
+<p>If you leave the penlight in the second area (on the left in the image above), you can only see the edge of the wounds, but you can still deal with these even if the light is not on them.
+You can use Naomi’s Healing Touch if you are worried about the vitals, but you should be safe not to need it if you are reasonably quick.</p>
+<p>In this final area, if you are quick enough you can suture these three cuts on the left before the light goes out.
+It isn’t necessary to use the camera flash if you can memorise the location of the large cut, glass, and laceration on the right.
+Using the camera here is considerably slower, so aim to memorise these areas.</p>
+<p>Z-4
+Given that the vitals are already kind of low, and if you worry about potentially dropping one of the tumours, pop Naomi’s HT before cutting the last to veins and extracting. For a quicker approach however, extract the two tumours, then pop HT.
+These large tumours are always located in the same place.</p>
+<p>After extraction, if you have not activated Naomi’s HT, do so now.
+You should sedate both the artery (red) and vein (blue) with one and two thirds injections each.</p>
+<p>After sedation, you should cut both of these points, then connect the tissue up. You should connect the artery first, and suture. The artery will take priority if you connect both of these up, as it is “above” it.</p>
+<p>When suturing the bladder, aim to do a vertical (up and down zig-zag) to close this.
+The wait here for the sedative to wear off isn’t consistent, and will depend on how long you take. Expect to wait anywhere between 5 and 10 seconds.</p>
+<p>Z-5
+Please follow the Kyriaki Advice found under GUILT - Kyriaki for this operation. The below is operation specific advice.</p>
+<p>まず、切り傷とそれに続く 3 回の Kyriaki に対処します。未成熟体を殺すにはレーザーを 3 回当てる必要があることに注意してください。Blue
+Savato が流れ出る切り傷を縫合し、Naomi の HT をポップします。Blue</p>
+<p>Savato を無視して、Kyriaki を倒すまで対処します。レーザーで Savato を攻撃すると、Little Guy に切断されます。
+回収する必要があるBlue Savato は1 体だけなので、1 体を注射してトレイに置き、他の 2 体を殺します。Blue</p>
+<p>Savato を注射するときは、鎮静化するために注射器の約 3/4 が必要で、1 回で投与する必要があります。失敗を避けるために、静止しているものを注射するようにします。
+動いているものを狙う場合は、完全に注射できるように、できるだけ多くのリードを与えます。</p>
+<p>←第5章    メインページ  第6章→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/chp/chp6.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/chp/chp6.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a></p>
+<p>コンテンツにスキップします。
+第6章
+メインページに戻る</p>
+<p>6-3
+この操作については、 GUILT - Tetartiの下にある Tetarti アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>この手術では憩室がないので、事前に血清を採取します。
+デレクがうめき声を上げたら (JP ではハミング?)、手術が半分終わったことを意味します。
+テタルティから放出されるガスはかなりのダメージを与える可能性があるので、各波の間にバイタル サインを強化します。ただし、注射器を使いすぎないように注意してください。</p>
+<p>6-4
+この操作については、 「GUILT - Kyriaki」および「GUILT - Paraskevi」の下にある「Kyriaki」および「Paraskevi」のアドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>最初の切り傷をすべて縫合したら、心臓の左側に次の切り傷が現れます。</p>
+<p>最初の 2 つの切り傷を縫合したら、パラスケヴィのセグメントを抽出します。
+次の 3 つの切り傷も心臓の左側と中央に現れます。</p>
+<p>パラスケヴィをすべて抽出したら、ナオミのヒーリングタッチを使用し、5 匹の未成熟なキリアキの処理を開始します。処理する前に 5 匹すべてを露出させることをお勧めします。未成熟なキリアキを 1 匹倒すには3 回の攻撃
+が必要であることに注意してください。 未成熟なキリアキを処理し、切り傷を縫合したら、少しの間待機します。 成熟したキリアキによる最終波が始まったら、より大きな脅威であるパラスケヴィを最初に処理します。 パラスケヴィを抽出したら、通常どおりキリアキを処理します。</p>
+<p>6-6*
+この操作については、 GUILT - Pemptiにある Pempti アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>アンジーはここでペンプティが変異していると主張していますが、サイクルがわずかに速いことを除いて、通常と違いはありません。
+一度に 2 つのコアをレーザーで照射することで、アニメーションが完了する前にすべてのブルー/ポリプ コアを殺すことができます。</p>
+<p>6-7*
+この手術は、 GUILT 患者4 名が連続して行うものです。この手術については、 GUILT - Triti
+、Kyriaki、Deftera、および Paraskevi の下にある Triti、Kyriaki、Deftera、および Paraskevi のアドバイスに従ってください。以下は、手術に特有のアドバイスです。</p>
+<p>プレイするドクターと、それぞれのヒーリング タッチは、デレクから順に交代します。
+そのため、トリティまたはデフテラにはデレクのヒーリング タッチを、キリアキまたはパラスケヴィにはナオミのヒーリング タッチを使用できます。
+ゲームの他の部分と同様に、各ドクターの HT は 1 人の患者にしか使用できません。
+ヒーリング タッチの使用は、さまざまな種類の GUILT に対する自信に依存します。一般的に、トリティにはデレクの HT を使用し、必要に応じてパラスケヴィにはナオミの HT を使用することをお勧めします。</p>
+<p>Triti の場合、パターンは常に同じです。HT をポップしてすべてのトゲを抽出し、次に三角形を抽出します。</p>
+<p>Kyriaki の場合、効率が良ければバイタル ブーストは必要ありません。
+最初の数匹の未成熟個体を処理した後、次の波は縫合後ではなくすぐに始まります。
+成熟個体には未成熟個体も同伴することに注意してください。</p>
+<p>Deftera の場合、一度に複数の血液プールを排出することを目指すのが最善です。</p>
+<p>血液は時々発生しますが、腫瘍を排出したりレーザーで治療したりするのを妨げない限り、最後に対処する必要があります。</p>
+<p>パラスケヴィに関しては、心配な場合は、ナオミの HT を利用してバイタルを最大までブーストすることができます。半分を処理した後にこれを行うのが最適です。
+心臓を攻撃しているので、パラスケヴィが潜り込むのを許すことはできません。幸いなことに、セグメントが潜り込む準備をしている場合は、アンジーが叫びます。</p>
+<p>6-8*
+この操作については、 GUILT - Savatoにある Savato アドバイスに従ってください。以下は操作固有のアドバイスです。</p>
+<p>ウェブフェーズはRNGで、第2段階では4つまたは5つのウェブが得られる可能性
+があります。最終段階でウェブをスキップすることはできないため、各オーバーラップをカットします。最後のオーバーラップをカットすると、追加のストランドが生成されます。メスを待つ間、すべての未成熟体をレーザーで切断するようにしてください。Savato
+2は一般的に攻撃的であるため、バイタルがドロップする可能性があることに留意してください。
+第2シールドフェーズでは、必要に応じて、DerekとNaomiの両方としてプレイしているため、操作を完了できないことを心配せずにNaomiのHTを使用できます。
+第1および第2シールドフェーズでは、未成熟体にあまり集中する必要はありません。未成熟体が手に負えなくなり、バイタルを半分にする大きな青いSavatoが生成される可能性があります。</p>
+<p>←第Z章    メインページ
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/guilt/kyriaki.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/guilt/kyriaki.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+ギルト - キリアキ [隠された刃]
+メインページに戻る</p>
+<p>このアドバイスは、Kyriaki が関与するすべての操作に適用されます。</p>
+<p>キリアキは最も一般的な GUILT タイプで、ゲーム全体で 10 人の患者に発生します。そのため、これにうまく対処できれば、時間の節約になります。
+キリアキを改善すると、スキルに基づくゲーム全体でのツールの切り替えにも大いに役立ちます。解説と注釈付きの視覚的な内訳が必要な場合は、こちらで
+私の内訳をご覧ください。</p>
+<p>バイタル
+キリアキを露出させると、6 ダメージを与えます。ただし、切り傷は時間の経過とともにダメージを与えるため、そのままにしておくと、この最小しきい値よりもバイタルが低くなる可能性があります。
+ウェーブが開始され、最初に作成された切り傷の数によってウェーブ内の未成熟体の数が決まり、生成された未成熟体 (およびその後の切り傷) ごとにバイタルがドロップされます。
+最終ウェーブで成熟したキリアキが生成されるときに、アスタリスクの切り傷を作成すると 18 のダメージを与えます。覚えておくべき 2 つの重要な値は、未成熟体がいない場合はバイタルが 40 で、未成熟体が同伴する場合はバイタルが 50 です。作成された切り傷を長い間無視しないで
+ください。バイタルの損失を防ぐために、できるだけ早くこれらを縫合することが重要です。</p>
+<p>ツールの切り替え
+便利なことに、この手術で使用する 4 つの主なツールは、ヌンチャクの基本的な方向にあります。ジェル、縫合糸、レーザー、メスです。対角線上にあるツールは、超音波とドレーン、および鉗子だけです。後者の 2 つは、治療の開始時にのみ使用されます。ツールの切り替えが一貫して効果的であることを確認すると、キリアキを迅速に処理できる可能性が大幅に高まります。ツールの順序は 、縫合糸、超音波、メス、ジェル、レーザー、縫合糸
+のようになります。 最初は覚えられなくても心配しないでください。時間が経てば覚えられるようになります。ペースを上げ始めたときに確実に身に付けられるよう、この順序を覚えることに集中してください。</p>
+<p>波
+キリアキは波を基本としています。つまり、すべての作戦 (第 6 章の作戦を除く) では、次の波の開始を遅らせて、開始する前にバイタルを強化する時間を与えることができます。
+一般的な経験則として、すべての切り傷に対処するまで、次のキリアキの波は開始されません。
+波は常に切り傷が作られるところから始まります。切り傷の数によって、対処しなければならないキリアキの数が決まります。例外として、最後の波にはアスタリスクが表示されます。これは、最後の波であり、成熟した個体 (および付随する未成熟個体) が産卵したことを示します。
+すべての波の開始時に、キリアキを追い詰める前に切り傷を縫合するようにしてください。</p>
+<p>超音波
+たとえ正確な位置がわかっていても、キリアキを切除するには超音波検査をする必要があります。何気なく超音波検査を繰り返すかもしれませんが、これはできるだけ早くキリアキを見つけて切除しようとする試みに反します。なぜなら、キリアキを一度超音波検査して発見し、再度超音波検査すると、2 度目の超音波検査を行わなかった場合よりも短時間でキリアキが再び消えてしまう可能性があるからです。
+この問題を解決するには、超音波検査の頻度を大幅に減らすことです。通常は 1 秒に 1 回検査すれば十分です。例外は、超音波検査を行ってもまったく見つからない場合、またはほんの少ししか見つからない場合です。その場合は、次の検索場所または現在キリアキがいるとわかっている場所で再度超音波検査を行い、確実に発見する方がはるかに効果的です。
+キリアキを見つけるには、臓器の中心に向かって超音波検査を行うのが最善です。特に肺の場合は、キリアキが存在するスペースが狭いため、その点が重要です。超音波検査で確認できない場合でも、0.5秒から1秒待つだけで、キリアキが中心に近づくのに十分な時間があります。</p>
+<p>困難
+ゲームが進むにつれて、キリアキはより厄介になっていきます。Z-5 以降、未成熟個体はそれぞれレーザーで追加攻撃を受けるため合計 3 回の攻撃が必要となり、成熟個体は追加で 1 回潜水するため、バイタル ドロップが大きくなります。
+これに加えて、5-2 の Paitent 3 以降では、最終ウェーブで成熟個体に同行する未成熟個体がいることに気が付くでしょう。未成熟個体を放置すると、切り傷が増え、バイタル ドロップが減るため、できるだけ早く倒すのが最善です。</p>
+<p>パス
+キリアキは臓器の形状に制限されているため、操作フィールドの外側の領域で見つけることはできません。つまり、臓器の端に到達すると、内側に跳ね返ります。
+ウェーブの開始時または成熟した臓器がダイブするときにカットが行われると、キリアキはカットの向きを継続します。これは成熟した臓器にも当てはまり、最終的なカットがそこで終了する場合、臓器の上部にあります。
+さらに、カットが臓器の境界を超えることはありません (超えた場合でも、ゲームで設定された境界内にあります)。キリアキがカットを行うときは、ランダムに方向を選択し、臓器のスペースに収まる場合はカットを行います。つまり、臓器の端近くにキリアキを露出させると、端から離れて、多くの場合は中心に向かって内側にカットされます。</p>
+<p>メインページ  デフテラ→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/guilt/deftera.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/guilt/deftera.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+罪悪感 - Deftera [忍び寄る腫瘍]
+メインページに戻る</p>
+<p>このアドバイスは、Deftera が関与するすべての操作に適用されます。</p>
+<p>Deftera はゲーム中に 2 回しか出現しませんが、どちらの場合も、ゲーム全体の巨大なゲートキーパーとして機能します。Deftera の仕組みを理解することで、Deftera を制御することが可能になりますが、そのランダムな性質により、制御が困難になる可能性があることに留意してください。また、世界中のあらゆる練習と指導があっても、Deftera は最終的には好きなように動作します。</p>
+<p>優先度
+デフテラで最も恐ろしいのは、すべてがうまくいかず、バイタルサインが急降下し、制御不能になったときです。何よりもまず、治癒のタッチを使用する必要がある場合は、そうしてください。ペアが出会うまでさらに長く待たなければならないため、最善のアイデアではありませんが、患者を失い、手術をやり直すことを防ぐことができます。
+デフテラ自体は、抽出の最終段階になるまで、それほど重要な損失を引き起こしません。代わりに、時間の経過とともに（反対のペアが出会ったときに）作成される腫瘍が、実際に患者を殺します。放っておくと、より小さな腫瘍が作成されます。大きな腫瘍がある場合は、より小さな腫瘍を作成し始めます。これらをレーザーで除去することを最優先にしてください。6〜7
+で形成される血液プールはそれほど危険ではありません。ただし、その下にあるものを治療することを妨げます。待っている場合、またはその下の腫瘍に到達する必要がある場合は、血液を排出してください。
+融合中のペアを排出することは、腫瘍をレーザーで除去することと同じくらい重要です。手術を完了するには、Deftera ペアを抽出する必要があります。Deftera
+が融合するのを待っているだけで、腫瘍がない場合は、バイタル サインを強化します。</p>
+<p>バイタル
+バイタルサインについて言えば、バイタルサインは最初から最後まで安定しているか、維持するのに苦労しているかのどちらかになります。これは、腫瘍が多くのバイタルサインにダメージを与えるという、Deftera のランダムな性質によるもので、特に腫瘍が多数密集している場合はそうです。腫瘍が急速に減少しないようにするには、大きな腫瘍をレーザーで除去してから小さな腫瘍を除去するようにしてください。Deftera
+の最終段階では、ドレーンを抜いた後、できるだけ早く切除する必要があります。最適に行われれば、バイタルサインは約 20 バイタルサインしか減少しないはずです。切除が遅く、作成された腫瘍をレーザーで除去すると、この状態が悪化します。Deftera
+のペアをできるだけ早く切除するには、切開線が現れる前に周囲を切除することをお勧めします。こうすることで、すでに円運動をしていること
+になります。二重摘出も可能ですが、安全に実行するには 60 バイタルサイン以上が必要になることに注意してください。これは、Deftera が「脈動」するたびにバイタル ラインが急降下し、腫瘍が大きな混乱を引き起こして、さらにバイタル ラインの損失を引き起こすためです。また、血液プールが発生する 6-7 では、ダブル抽出は非常に危険です。そうしないと、IrisJoker に起こったことと同じリスクを負うことになります。</p>
+<p>ゲル
+Under the Knife をプレイしたことがあるなら、ゲルを使ってデフテラをコントロールするのは賢いアイデアに思えるかもしれませんし、実際にそうかもしれませんが、非常に多量に使用しなければなりません。ゲルはバイタルを大きな塊で落とします。
+ゲルを使いたい場合は、デフテラの細胞の 1 つの経路でゲルをタップして跳ね返らせます。これは、性質上、少しランダムになることがよくあります。
+デフテラを排出した後、またはデフテラが融合し始めている間に、ゲルで囲むと、他の細胞がペアを妨害するのを防ぐのに役立つ場合があります。ゲルの仕組み上、これは 100% 一貫しているわけではありませんが、バイタルが十分に高い場合は、1 つのペアを確実に抽出するために役立ちます。</p>
+<p>HPステージ
+デフテラ自体は、完全に抽出されるまでに 3 つの段階があり、ドレインが成功するたびに色がより鮮やかになり、ペアが出会うと全体的に黄色くなります。2
+組のデフテラを扱う場合、それらを異なる段階に保つと役立ちます。なぜなら、それらは合体できず、互いを通過するだけだからです。デフテラが定期的にぶつかり合って止まらない場合は、それらのヘルス ステージをずらすと、これを簡単に行うことができます。HP
+値が異なっていても、ペアが合体しているときに、合体しているペアに 1 つのセルがぶつかると、合体が中断される可能性があることに注意してください。</p>
+<p>腫瘍
+現実的に、これが患者のバイタルサインを消耗させる原因です。Deftera に初めて出会う 3-4 では、4 つの腫瘍をレーザーで除去する必要がありますが、これが波の前に腫瘍が現れる唯一の機会です。Deftera
+の個々の細胞は、半ランダムな間隔で、関連する色の腫瘍 (赤の場合は黄色、青の場合は濃い青) を生成します。小さな腫瘍がこれらから生成されるのを防ぐために、できるだけ早くレーザーで除去することが重要です。
+大きな腫瘍はより多くのバイタルダメージを引き起こしますが、小さな腫瘍の発生を許すと、時間の経過とともにさらにダメージを引き起こします。
+小さな腫瘍はより多くの腫瘍を生成することはできないため、大きな腫瘍を最優先し、その後に小さな腫瘍を処理します。Deftera
+を摘出しようとしているときに暴れ出すと、速度によっては腫瘍も発生する可能性があります。理想的には、これを最後に処理して膜を消滅させ、わずかに速くクリーンアップできるようにする必要があります。</p>
+<p>←キリアキ   メインページ  トリティ→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/guilt/triti.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/guilt/triti.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+罪悪感 - トリティ [伝染性の悪夢]
+メインページに戻る</p>
+<p>このアドバイスは、トリティが関与するすべての操作に適用されます。</p>
+<p>Triti は、スピードラン設定では最も些細な GUILT 系統の 1 つですが、気軽に言えば悪夢なので、その名前が付けられています。</p>
+<p>拡張のルール
+トリティを素早く処理するための主な原動力は、トリティを制御する方法を理解することです。ヒーリング タッチを使用するという事実にもかかわらず、必要に応じてヒーリング タッチなしでトリティを抽出する方法を知っておくと非常に役立ちます。
+トリティには、膜を除去するときに常に適用される 2 つのルールがあります。トリティが広がる場所を管理するのはトゲ自体であることに注意してください。したがって、トゲをすべて取り除くと、膜が除去されてもトリティは広がりません。</p>
+<p>隣接する2本の棘の間にトリティが拡張できるエッジがあり、膜が除去されると、トリティはこのスペースに拡張します。
+膜を抽出したときに 1 本の棘が残っている場合、最終的な膜の端に 3 枚の膜が作成されます。他の GUILT 株と同様に、トリティは臓器によって閉じ込められていることに注意してください。安全策としては、すべて抽出できない場合は、トリティを隅に追いやります。
+これらのルールは膜が除去されるたびにチェックされるため、膜が広がる余地がある間に膜を抽出し、別の膜を除去すると、予想以上に広がります。</p>
+<p>青いセグメント
+スピードラン設定では、青いセグメントはそれほど大きな問題ではありません。患者を死に至らしめるほどの致命的なダメージを与える前に、トリティ全体を抽出できることが多いからです。青いセグメント
+が出た場合は、慌てずに計画的に抽出を続けてください。バイタル サインが下がる可能性がありますが、患者が死にそうでない限り、バイタル サインを高めることは考えないでください。そうは言っても、患者が死にそうな状況に陥っている場合は、精度を高める必要があります。</p>
+<p>ガス雲
+トリティをヒーリングタッチなしで行うことを選択した場合、またはハードでプレイしている場合は、トゲを取り除くときにガス雲が見られます。トゲを取り除く作業中はペースが狂う可能性がありますが、雲自体にはかなりの余裕があり、すぐに排出する必要はありません。そうは言っても、あまり長く待つべきではなく、5秒以上待つ必要があります。
+一般的に、ヒーリングタッチを使用すると、トリティを取り除くときにガス雲に対処する必要がなくなります。これは、いくつかの三角形を取り除く必要があることと、どの操作を行っているかによって異なります。3-10では、ガス雲が発生する可能性はほとんどありません。</p>
+<p>抽出
+トリティを取り除く最も早い方法は、すべてのトゲを引き抜いてから、すべての膜を引き抜くことです。これは、臓器の 1 つの部分だけでなく、臓器全体に対して行う必要があります。分離しているように見えるかもしれませんが、トリティは 1 つの実体として機能します。これにより、すべての膜が中和され、トゲがなくなった状態で拡大することがなくなります。
+ヒーリング タッチを使用すると、これを行うための時間が長くなるため、強くお勧めします。
+トゲは上方向に約 5 ピクセル引き抜く必要があるため、トゲを持ち上げてから、弧を描いてトレイまで回し、これを繰り返すことで、時計回りの円運動で引き抜くと、これが簡単になります。以下は、必要なパスよりも少し強調されていますが、これは前提を示しています。これにより、各トゲを簡単に拾うことができます。</p>
+<p>すべてのトゲを取り除いた後、膜を引き抜くために標準的な左から右への動きを使用できます。</p>
+<p>←デフテラ   メインページ  テタルティ→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/guilt/tetarti.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/guilt/tetarti.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+GUILT - テタルティ [シンクロナイズド・ヴェノム]
+メインページに戻る</p>
+<p>このアドバイスは、Tetarti が関与するすべての操作に適用されます。</p>
+<p>まるでアトラスがシモンズ セイズを収録したかったようです! この GUILT 系統は一般的に単純ですが、他の系統よりも安定した手が必要になります。</p>
+<p>憩室
+6-3 を除くほぼすべての Tetarti 手術の開始時に現れる膿瘍は、Tetarti 自体から始まる本当の戦いの前に除去する必要があります。黄色憩室には、常に最初に黄色血清を注入し、次に緑色血清、最後に紫色血清を注入する必要があります。
+この順序が最も速く、個々のポリープが単一の段階を超えて拡大しないことを保証します。
+抽出のプロセスは次のとおりです。約 1/4 の用量を注入し、切除します。3 つすべてが処理されるまで繰り返します。次に、トレイに落としてパッチを当てます。最適になるように、各膜にゲルを軽くたたく必要があります。</p>
+<p>注射で間違った細胞に当たった場合は、膿瘍が大きくなりすぎる前に注入して抽出する準備をしてください。患者のバイタルが急降下するのを見るよりも、抽出によってサイクルをパスする方がよいでしょう。上記プレウェーブと同じ方法で治療する必要があります。</p>
+<p>注射
+手が安定していれば、注射自体はそれほど難しくありません。そうは言っても、テタルティのヒットボックスは小さくてわかりにくいことで有名です。腕が体と接する頭の中心に向かって注射するようにしてください。
+投与量は非常に少なく、最大でも注射器の 4 分の 1 を引くだけで済みます。100
+% 最適ではありませんが、テタルティ細胞ごとに十分な量を注射するには、注射が自動的に停止するまで A を押し続けます。これを繰り返すほど、いつ終了するかを判断できる
+ようになります。ウェーブが始まる前に、1 色を描きます。常にウェーブの前にこれを行い、時間を無駄にしないようにします。同じ色を一貫して描くようにして、何も考えずにできるだけ早く同じ色を狙えるようにします。</p>
+<p>テタルティは互いに非常に接近することが多く、安定した手を使っても正しい色を注入するのが難しくなります。これに対処するには、テタルティが広がるまでしばらく待つ必要があります。テタルティは通常、互いに直接重なることはなく、出会った角度で跳ね返り、多くの場合、臓器バリアでそうであるように 180 度回転します。</p>
+<p>バイタル
+ミスするたびにバイタルが 5 ずつ下がります。これは大したことではありません。しかし、各セルに必死に注射をしようとしてミスを何度も繰り返すと、バイタルを上昇させるために必死になることがあります。
+各ウェーブの間には、注射器を余分に使わずに、少なくとも 1 回分の安定剤を注射する余裕があります。これは、5-4 や 6-3 を扱うときに非常に重要です。Tetarti
+を練習して、個々のセルごとにミスが 4 回未満になるようにしてください。</p>
+<p>突然変異
+6-3 では、各タイプから蒸気が出るまで色を読み取る方法がないため、Tetarti は少し難しくなります。
+他の操作と同様に、各ウェーブが始まる前にすでに注射器に投与量を入れておく必要がありますが、色が表示されない場合は表示されるまで待たなければなりません。
+これ自体はそれほど難しくなく、むしろガスによってその場で色を識別しやすくなります。
+ただし、バイタル サインの低下がはるかに速いため、ウェーブの合間にブーストするようにしてください。Tetarti
+フェーズの半分が経過すると、Derek が日本語でハミング、英語でうめき声を上げます。
+この操作では重複が大きな懸念事項であるため、どのガスがどの色のガスを放出しているかがわかりにくい場合は、Tetarti が少し広がるまで通常よりも長く待つようにしてください。ただし、時間がかかりすぎると、投与量を再注入する必要があることに注意してください。</p>
+<p>←トリティ   メインページ  ペンプティ→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/guilt/pempti.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/guilt/pempti.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+GUILT - ペンプティ [装甲細菌]
+メインページに戻る</p>
+<p>このアドバイスは、Pempti が関与するすべての操作に適用されます。</p>
+<p>Pempti は基本的に横スクロール ゲームなので、このゲームで時間を節約できるのは限られています。改善できる主な点は、このゲームが制御不能にならないようにすることです。</p>
+<p>コアタイプ
+Pempti のメイン コアの横には 3 つのミニ コアがあります。それぞれに独自の攻撃と対処方法があります。正しく制御すれば、一度に複数のコアを処理する必要はほとんどありません。Pempti
+のコアに最初のダメージを与えると、常に 3 つのコアが順番に表示されます。</p>
+<p>赤いコアは裂傷を作ります。全部で 5 つあり、それぞれが個別の経路をたどります。他の赤いコアが通ったのと同じ経路をたどることはありません。これらのコアが臓器を横切るまでに遅延があるため、切断する前にレーザーで照射することができます。最後のコアは常に臓器の右下に向かって進みます。
+青いコアはポリープ/腫瘍を作ります。5 つ出てきます。通常の難易度では、ペンプティ膜が臓器を上方に拡張する前に、これら 5 つすべてをレーザーで照射することが可能です。ただし、1 つを移動させる必要がある場合は、常に一番右のコアにする必要があります。これは最短経路であるため、作成される腫瘍の数が最も少なくなります。コアが膜とともに臓器を上方に移動している間は、それを殺すことはできません。そうは言っても、レーザーで HP を 1 まで減らすことはできます。そのため、腫瘍を作成している間にレーザーで照射する必要があります。そうすれば、低 HP にしながら混乱を解消できます。サイクルの後は、レーザーで照射するだけですぐに死ぬはずです。サイクルの終了時にすべてのコアを破壊しないと、空きスロットが新しいコアで埋められます。このような状況になっている場合は、すべてのコアを早めに破壊する必要があります。
+グレー コアは致命的なダメージを与えます。5 つ出現し、コアの周りを旋回します。ウェーブの開始時にメイン コアにレーザーを当てていれば、これらをかなり早く破壊できます。バイタルが急降下するのを防ぐために、これらを素早く破壊しようとしない限り、これらはメイン コアの周りを旋回する以外にアクションがないため、対処が最も簡単です。</p>
+<p>Pempti の体力の半分 (4 ヒット) または最後のヒット (8 ヒット) に達すると、実行中のアニメーションに関係なく、すべてのコアが消滅します。</p>
+<p>ヒーリングタッチ
+スピードラン中にどちらの作戦でも Derek の Healing Touch を使用しないようにすることは驚くことではないかもしれません。Pempti は完全にサイクル ベースであるため、これらのサイクルを遅らせると、作戦全体が長引くことになります。ただし、
+すべてが崩壊している場合は、HT をポップする方が作戦全体をやり直すよりも速くなります。Healing Touch をアクティブにする必要があるのは、画面上に多数のポリープがあり、縫合が必要な裂傷があり、バイタルが急速に低下して追いつけないときだけです。これはクリーンアップ ループと呼ばれ、Pempti の主なギミックです。</p>
+<p>レーザ
+焼き尽くすことのできない特殊なレーザーを持っているにもかかわらず、各鉱石をレーザーで攻撃するより良い方法を理解することが重要です。各コアのヒットボックスはスプライトとほぼ一致していますが、コア間をレーザーで攻撃できる重複部分もあります。90
+% の確率で、メイン コアをレーザーで攻撃することを狙う必要があります。これは、アイドル状態でコアを待っているときに特に当てはまります。ミニ コアがここから出現することを考慮して、待機中もメイン コアにレーザーを照射し続けます。ミニ コアが早く破壊されるほど、操作は早く終了します。正確なサイクルに応じて、メイン コア自体が損傷する準備ができている場合は、裂傷コアを 1 つまたは 2 つ通過させて切断を行うことができます。Pempti
+のメイン コアには合計 8 つのヘルス ポイントがあり、4 回目のヒットでミニ コアが破壊され、既存のサイクルがリセットされます。</p>
+<p>←テタルティ  メインページ  パラスケヴィ→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/guilt/paraskevi.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/guilt/paraskevi.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+罪悪感 - パラスケヴィ [心臓への矢]
+メインページに戻る</p>
+<p>このアドバイスは、Paraskevi が関与するすべての操作に適用されます。</p>
+<p>この品種は、何よりもあなたの正確さ、そしてあなたの縫合力を試します。パラスケヴィは時間に敏感なので、特に心臓にかかっているときは神経をすり減らす可能性がありますが、これを簡単にするためのいくつかのトリックがあります。練習すれば、パラスケヴィは信じられないほどカタルシスをもたらすことができます。</p>
+<p>レーザー加工と優先順位
+難しそうに聞こえるかもしれませんが、パラスケビを気絶させようとするときは、尾を追いかけないことが重要です。レーザーが消耗する可能性が非常に高いからです。また、穴を掘ろうとしているときに気絶させられない場合は、臓器を移動させるか、心臓に刺さっている場合は患者を失うことになります。レーザーをタップして使用するレーザーの量を減らし、尾がワームの残りの部分とつながっている場所を狙うと、レーザーがより一貫して当たるようになります。</p>
+<p>ここでの目標は、パラスケビの半分を摘出しつつ、もう半分は完全にそのままにすることです。経験則は、「できるだけ小さなセグメントを摘出するように努める。それがない場合は、できるまで、最も小さなセグメントを分割する」です。つまり、最も小さなセグメントにのみ焦点を当て、穴を掘ろうとしない限り、最も大きなセグメントは無視します。
+ただし、最後の数セグメントにいる場合は、（バイタルが十分に高い場合）一度に複数のワームを分割すると効果的です。これは、切り口が 2 つ残っているセグメントに最適です。切り口では、抽出前に最後にもう一度切らなければならない 2 匹のワームが作成されます。これにより、削除するセグメントが 4 つ残りますが、スキルにもよりますが、比較的簡単に処理できるはずです。</p>
+<p>パラスケヴィ自体は、分裂してから平均 6 ～ 7 秒後に地中に潜り始めます。尻尾が振られたら、地中に潜る前に 3 秒間気絶させることができます。尻尾を振るまでの時間はこれより長くても短くてもよいことに注意してください。Thurler は、これについてより詳細に説明したビデオを
+作成しました。 これを念頭に置いて、最大のセグメントを常に監視する必要はなく、地中に潜らないように定期的にレーザーを当てるだけで済みます。
+パラスケヴィが地中に潜ろうとすると、Angie または Victor が音声で警告し、地中に潜るまで 3 秒あることを知らせます。</p>
+<p>バイタル
+パラスケヴィのセグメントを分割するたびに、切り傷が通常時の重要部位に 5 のダメージを与えます。
+ただし、殺人者はこれらの切り傷をそのままにしておきます。重要部位のダメージがこれ以上悪化するのを防ぐために、できるだけ早くこれらの切り傷を縫合するのがベストプラクティスです。</p>
+<p>手術の初めには、パラスケヴィが出現する前に縫合する必要がある切り傷がいくつかあります。パラスケヴィが出現する前に、バイタルを最大まで強化できるはずです。</p>
+<p>最適に実行されれば、バイタルサインがほとんど出ない状態で手術が終了する可能性が高くなります。</p>
+<p>キリアキと
+6-4 で Kyriaki が同伴している場合、何を優先すべきか判断するのが難しい場合があります。ただし、Paraskevi は完全にタイマーに基づいているため、できるだけ早く抽出することが重要です。
+開始時に単一のセグメントが表示されたら、切り傷を縫合してすぐに抽出する必要があります。
+成熟した Kyriaki が出現する最終ウェーブでは、切り傷を縫合した後でも Paraskevi を優先する必要があります。これは、6-4 が心臓に対して実行され、1 つの穴でも操作が失敗するためです。</p>
+<p>←ペンプティ  メインページ  サヴァト→
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+<p><a href="https://leokeidran-github-io.translate.goog/tcso/guilt/savato.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp">https://leokeidran-github-io.translate.goog/tcso/guilt/savato.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp</a>
+コンテンツにスキップします。
+罪悪感 - サヴァト [死との対決]
+メインページに戻る</p>
+<p>このアドバイスは、Savato が関与するすべての操作に適用されます。</p>
+<p>ゲームの最終ボスとして登場する Savato は、精度、ツール管理、適応力の試練です。しかし、この種族をできるだけスムーズにするためのテクニックが複数あることを知って、あなたは喜ぶでしょう。しかし、その攻撃的な行動と RNG により、数秒を浪費し続けることは変わりません。</p>
+<p>ウェブフェーズとスカルペルグリッチ
+患者を開いたら、まずウェブを切る必要があります。最適な方法は、2 本のストランドが重なり合う部分で切ることです。
+こうすることで、残ったストランドのヘルスが 1 ポイントになります。
+重なり合う部分をそれぞれ切るということは、メスの消耗を抑えながら、実質的に切る量を減らすということです。
+メス グリッチを実行するには、メスを選択し、カーソルをストランドの上に置いて A キーを押し続けます。次に、ヒーリング タッチを開始するときのように C または Z をタップします。1 フレームの間、メスは使用できないにもかかわらずカットします。このトリックは、メスが使用できない場合にのみ実行してください。
+メスは、非アクティブとして表示されていても使用できることに注意してください。これは、ツールが UI が示すよりも少し早く回復するためです。つまり、以下の例では、最初のストランドを通常どおりにカットし、2 番目のストランドに HT グリッチを実行します。</p>
+<p>ウェブの 3 番目/最終段階には理想的な順序があります。この順序では、3 番目の重なり合うウェブをカットした後、1 本のストランドだけが残ります。この方法で行うと、Savato によって作成された余分なストランドが、既存のカットを妨げない形で配置されます。ウェブが赤くなる 6 ～ 7 でも、ウェブをカットする前に未成熟のウェブをレーザーで処理する時間は十分にあります。
+ウェブ上でピンクで示される領域は、再出現するウェブであり、必然的に最後にカットするウェブになります (以下で説明するウェブ スキップを実行しない限り)。</p>
+<p>ウェブスキップ
+上記の知識があれば、5-9 で、RNG が貧弱でウェブ ストランドが 5 本ある場合、2 番目のウェブ ステージでウェブ スキップを実行できます。これを実行するには、まず、前のフェーズ後にメスが再生するのを待っている間に、単一のストランドでスカルペル/HT グリッチを約 5 回実行する必要があります。ただし、メスが戻ってくる前にグリッチの実行を停止してください。そうしないと、メスがさらに長い間使用できなくなります。メスが戻ってきたら、通常どおりグリッチを実行して、重なり合った 2 つのストランドをカットします。再び、メスが戻ってくるのを待っている間に、単一のストランドでグリッチを再度 5 回実行します。メスが戻ってくる前に停止し、重なり合った 2 つのストランドをもう一度カットすると、最後の 5 セットの 1 つでストランドが切断されるはずです。
+これは、5-9 で、ウェブ ストランドが 5 本ある場合にのみ実行してください。</p>
+<p>This strat can also be extended to the final web phase on 5-9, however instead you must execute the glitch on a set of overlapping strands. To do this, while waiting waiting for your scalpel to regenerate, execute the glitch 5 to 7 times on an overlap. Do not cut this overlap when your scalpel then returns, instead cut a different overlap. Repeat the glitch again 5 to 7 times on the same overlap you had started with, and cut the other overlap. You should now have the last overlap you have been executing the glitch on. With a few more taps, this should break and you skip the extra strand that Savato would normally make, and the Shield Phase begins.</p>
+<p>If you do not go for Web Skip, or dealing with Savato in 6-8, after dealing with the first two overlaps, as you get to the final overlap, Savato will create an extra strand as well as spawn some immatures. While you wait for your scalpel to return, be sure to laser all these immatures before you then cut the final strand. This way you don’t have to watch all the immatures run into Savato which can take a painfully long time.</p>
+<p>Shield Phase
+This is where the bulk of Savato’s fight takes place, and where you’ll now juggle the patient’s vitals, your laser, and Savato’s own damage to indicate your approach.
+A few ground rules to help you better approach this fight:</p>
+<p>Savato has HP stages that upon getting an OK for burning through its shield, it will progress through.
+Any time Savato attacks, it will regain back to its current HP stage, regardless of how much you had burned through.
+Five immatures are needed to merge to create a larger immature that cuts vitals down.
+Cuts that create immatures deal 5 damage, and triple cuts do 10 damage.
+If you are lasering Savato, and it attacks, you’ll feel the vibration stop on the Wiimote (if you do not have rumble enabled, turn this on). Savato will also do a “stomp” with a web appearing under it that can be helpful to spot when it is going create a laceration and immatures will pour out. Savato does not do an animation when it is about to create a triple cut, so feel for the rumble stopping or the cuts appearing. Note that Savato jumps when creating these cuts.</p>
+<p>Savato’s Health Stages
+As mentioned above, Savato has four HP stages that it goes through sequentially per each area of the heart. Each stage of health requires a set amount of laser to get through.</p>
+<p>5-9: 49% → 37% → 25% → 11%
+6-8: 59% → 47% → 32% → 14%</p>
+<p>Note that these percentages are for Normal. Hard generally requires slightly more laser for the first and second phase of shield.
+Quark has a video that shows this rather nicely with usage of the Dolphin Memory Engine.
+Once Savato’s health has dropped a stage, it will always create a cut that forms immatures.</p>
+<p>Laser Durability
+Given the laser only has so much durability, dealing damage to Savato between attacks is a juggling act as not to run out of laser right before you can move onto the next HP stage.
+Firstly, the UI indicates how much laser you have left:</p>
+<p>White: 100-51%
+Yellow: 50-26%
+Red: 25-1%</p>
+<p>Secondly, the laser takes time to restore. This might seem obvious, but it can be faster to burn the laser out and wait for it to recover. There is an exact cut-off for when this is better, which is 41.632%. This however is near impossible to tell, so the rule of thumb I follow is: If you have use the laser until it shows as yellow on the UI, burn it out.
+This isn’t exact of course, but it gives you a general idea of when this gives more benefit than drawback.
+However, there times where it doesn’t matter if you wait for the laser to regenerate. Notably if you have a lot of clean-up or the vitals are too low to proceed with lasering Savato. It is down to you when you should choose to do this, and with experience you’ll be able to better determine when you should focus on vitals vs attacking Savato.</p>
+<p>Immatures
+These pesky mini spiders don’t cause much of a problem however it is important not to let too many roam on the heart as you tackle Savato’s shield. Only five are needed before a blue Savato can be formed which drops the vitals significantly and reduces the max vitals as well. However, unlike in 5-8, you have a safety period where no merges can take place. When Savato creates a cut with immatures spawning, they will form in the centre of the cut. The best way to tackle this is to laser in the centre of the cut before the immatures get further out.</p>
+<p>Final Stand
+Savato’s final phase is after you have broken through Savato’s shield for the fourth time and you must inject the black serum to neuralise it. This requires a full dose of the serum, so if you miss you need to re-draw the very tiny amount you lose. Note that before you inject the first dose of the serum the vitals must be above 30. If they aren’t, the vitals will reach 0 and the patient will die. However, there is as very risky strat you can use if the vitals are just below 30 - after the first injection, there is a window where Savato centres itself on the organ and HT activates as the vitals drop. You can inject stabiliser in this window to prevent the patient from dying. This is a very tight window and requires you to be quick, and I wouldn’t normally recommend it unless you know you can boost the vitals up in time.</p>
+<p>Healing Touch &amp; Lag
+これまでにサヴァトを倒したことがあるなら、デレクのヒーリングタッチを発動すると、かなりのラグがあることに気付くでしょう。これは、切り傷から出る血と、心臓に対するオペレーションが原因です。スピード
+ランの時間をゲーム時間ではなく実時間で計測しているので、ラグのないサヴァトを手に入れると、注射と最後のアニメーションがかなり速くなるため、かなりの時間を節約できます。
+「ラグのないサヴァト」を手に入れるには、新しい切り傷がなく、血が消えているときにヒーリングタッチを発動する必要があります。
+ただし、このウィンドウ内に星を描くのは非常に難しいため、代わりに星をバッファリングする必要があります。これを行うには、通常どおり星を描きますが、最後の行で A または B を放さずに、カーソルを終点に置いたままにします。理論上は、これを無期限に行うことができます。 A または B を放して、血が消えたら星をポップします。</p>
+<p>上記の例では、デレクの HT をポップする前に血清を抽出していることに注意してください。これは、サヴァトが長時間攻撃しない 5-8 で実行できます。バッファー HT テクニックを適用する場合は、この期間はいずれにしても待機することになるので、ここで血清を抽出すると少し時間が節約されます。残念ながら、6-8 のサヴァトはこれを行うには攻撃的すぎます。</p>
+<p>←パラスケヴィ メインページ
+tcso はLeoKeidranによって管理されています。
+このページはGitHub Pagesによって生成されました。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.twitch.tv/tdnossan" target="_blank" rel="noopener" title="www.twitch.tv" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M391.17 103.47h-38.63v109.7h38.63ZM285 103h-38.63v109.75H285ZM120.83 0 24.31 91.42v329.16h115.83V512l96.53-91.42h77.25L487.69 256V0Zm328.24 237.75-77.22 73.12h-77.24l-67.6 64v-64h-86.87V36.58h308.93Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.path", "header.autohide", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../../js/custom.js"></script>
+      
+    
+  </body>
+</html>
